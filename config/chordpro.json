@@ -1,0 +1,66 @@
+{
+  "notes": {
+    "system": "latin",
+    "sharp": [ "Do", ["Do#", "Do\u266f"], "Re", ["Re#", "Re\u266f"], "Mi", "Fa", ["Fa#", "Fa\u266f"], "Sol", ["Sol#", "Sol\u266f"], "La", ["La#", "La\u266f"], "Si" ],
+    "flat":  [ "Do", ["Reb", "Re\u266d"], "Re", ["Mib", "Mi\u266d"], "Mi", "Fa", ["Solb", "Sol\u266d"], "Sol", ["Lab", "La\u266d"], "La", ["Sib", "Si\u266d"], "Si" ]
+  },
+
+  "diagrams": { "show": "all" },
+
+  "pdf": {
+    "papersize": "a4",
+    "pagealign-songs": 0,
+    "even-odd-pages": 0,
+
+    "margintop": 40,
+    "marginbottom": 34,
+    "marginleft": 45,
+    "marginright": 45,
+    "headspace": 32,
+    "footspace": 14,
+    "head-first-only": true,
+
+    "spacing": {
+      "title": 1.0,
+      "lyrics": 1.06,
+      "chords": 1.0,
+      "empty": 0.38
+    },
+
+    "diagrams": {
+      "show": "bottom",
+      "width": 5,
+      "height": 5,
+      "hspace": 3.2,
+      "vspace": 2
+    },
+
+    "theme": {
+      "foreground": "black",
+      "background": "white"
+    },
+
+    "chorus": {
+      "indent": 0,
+      "bar": { "offset": 8, "width": 2, "color": "#1565C0" },
+      "tag": "Estribillo",
+      "recall": {
+        "choruslike": true,
+        "quote": false,
+        "tag": "Estribillo",
+        "type": "comment"
+      }
+    },
+
+    "labels": { "width": "auto", "align": "left" },
+
+    "fonts": {
+      "title":    { "name": "Helvetica-Bold", "size": 15 },
+      "subtitle": { "name": "Helvetica-Oblique", "size": 10 },
+      "text":     { "name": "Times-Roman", "size": 10.5 },
+      "chord":    { "name": "Helvetica-BoldOblique", "size": 9, "color": "#1565C0" },
+      "comment":  { "name": "Helvetica-Bold", "size": 9.5, "background": "#ECECEC" },
+      "tab":      { "name": "Courier", "size": 8 }
+    }
+  }
+}

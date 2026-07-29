@@ -1,0 +1,15 @@
+# Salida generada (los PDF son artefactos de build, no se versionan)
+/dist/
+*.pdf
+
+# Temporales de pruebas y de herramientas
+/.scratch/
+/.playwright-mcp/
+__pycache__/
+.vscode/
+
+# Sistema operativo / editores
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp

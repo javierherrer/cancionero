@@ -1,0 +1,49 @@
+# Fuente: https://acordes.lacuerda.net/rebujitos/todos_los_besos.shtml
+# Version de lacuerda: "Letra y Acordes" (Los Rebujitos), version principal.
+# Original en La mayor; transportada +3 a Do para tocar con cejilla en 3 (DO +3).
+# Ritmo de pasodoble 3x4. Notacion espanola. Requiere config/chordpro.json.
+
+{title: Todos los besos}
+{subtitle: Los Rebujitos}
+{artist: Los Rebujitos}
+{key: Do}
+{capo: 3}
+
+{grid: ritmo de pasodoble 3/4 · acordes con color: Imaj7 · vi7 · ii7}
+
+{start_of_verse: Estrofa 1}
+[I]Tú, [Imaj7]mi otra parte que espe[vi]raba
+[vi7]lo que siento aquí en mi [ii]alma
+[ii7]lo siento en mi [V]sen[V7]tir
+[I]tú, [Imaj7]que endulzas las pa[vi]labras
+[vi7]y cuando te ca[ii]llas
+[ii7]el silencio [V]sabe a [V7]ti
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[ii]Hoy [ii7]creo, que he sido un poco [vi]tonto
+[vi7]que hoy no te he lla[V]mado
+[V7]pero es que se me ha pa[ii7]sado
+[ii7]por buscar en el ca[V]jón[V7]
+[I]Todos los besos posibles
+[Imaj7]las llaves para abrir tu corazón irresis[vi]tible
+[vi7]mil flores pa entregarte a mi ma[ii]nera
+[ii7]y un sol pa que te ayude a despertar [V]sin [V7]mi
+[I]y un barquito de vela y un viento de le[Imaj7]vante
+[vi]pa llevarte a todas partes,
+[vi7]el cielo, un pentagrama y compo[ii]nerte
+[ii7]con notas de color una canción [V]pa [V7]ti
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+Eres el motor de mi corazón,
+una mujer hecha canción,
+eso eres, eres.
+Miro siempre a mi alrededor
+para ver si veo yo
+algo más bello, bello.
+{end_of_verse}
+
+{chorus}
+
+{comment: Cierre: «Todos los besos…» · «y un barquito de vela» (tapando las cuerdas) · instrumental}

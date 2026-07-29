@@ -1,0 +1,40 @@
+# Plantilla de canción — copia este archivo a  songs\<artista>\<cancion>.cho
+# Notación española (Lam, Sol, Fa, Mi...). Genera el PDF con  scripts\build.ps1
+# Fuente: <url o referencia de dónde sacaste la versión>
+
+{title: Título de la canción}
+{subtitle: Artista}
+{artist: Artista}
+{key: Do}
+{capo: 0}
+
+{comment: Tono y progresión base (p. ej.: Lam · Sol · Fa · Mi)}
+
+# --- Intro opcional en tablatura (borra el bloque si no la necesitas) ---
+{start_of_tab: Intro}
+E|-----------------|
+B|-----------------|
+G|-----------------|
+D|-----------------|
+A|-----------------|
+E|-----------------|
+{end_of_tab}
+
+{start_of_verse: Estrofa 1}
+[Do]Escribe la letra con los [Sol]acordes encima
+donde cambian de verdad, [Lam]como en lacuerda.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[Fa]Letra del estri[Do]billo
+[Sol]con su progre[Lam]sión.
+{end_of_chorus}
+
+# Repite el estribillo SIN volver a escribirlo:
+{chorus}
+
+{start_of_verse: Estrofa 2}
+Si la progresión se repite igual, deja solo la letra junta
+y anota la progresión en un comentario debajo.
+{end_of_verse}
+{comment: (misma progresión por línea: Do · Sol · Lam · Fa)}

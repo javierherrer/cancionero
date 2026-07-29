@@ -1,0 +1,70 @@
+# Fuente: https://acordes.lacuerda.net/moles/el_legionario_y_la_morita.shtml
+# Version de lacuerda: "Letra y Acordes" — valoracion 8.34 (29 opiniones), la mejor valorada.
+# El usuario la referencia como "Chipiron de Granada"; se toca con cejilla en 3 (LAm +3).
+# Tono: Lam (La menor) · cadencia andaluza · progresion base: Lam · Sol · Fa · Mi
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: El legionario y la morita}
+{subtitle: Los Moles}
+{artist: Los Moles}
+{key: Lam}
+{capo: 3}
+
+{grid: Cadencia andaluza · progresión base por línea: i · bVII · bVI · V}
+
+{start_of_tab: Intro (punteo)}
+E----------------------------------------------1-1-1-0-----------------0-0-
+B----0-1-1-1-1-1-1-0---1---------0-1-1-1-1-1-1---------3-0-0-1-3-3-3-3--3--
+G--2-----------------2---2~----2-------------------------------------------
+D-2--------------------------2---------------------------------------------
+A--------------------------------------------------------------------------
+E--------------------------------------------------------------------------
+
+E---0-------------------------------------------------
+B-3---3-1-1-0----------3-3-1-0-1-0--------------------
+G------------2-1------------------2-------------------
+D----------------2-2-2--------------------------------
+A-----------------------------------------------------
+E-----------------------------------------------------
+{end_of_tab}
+
+{start_of_verse: Estrofa 1}
+{grid: i · bVII · bVI · V por línea}
+Y estando un día en un burdel de casa blanca,
+un legionario de una morita se enamoró
+y fue tan grande el amor de aquel legía,
+que al poco tiempo con la mora se casó
+pasaron horas de alegrías y de placeres,
+y en el trayecto de melilla a casa blanca
+tras una noche embriagado por el kiffi,
+a la morita sorprendió en un cabaret
+lleno de ira sin saber lo que se hacía,
+sacó la pusca y a la ingrata disparó
+hizo de blanco lo ligó la policía,
+y a la morita entre tanto le cantó.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+{grid: i · bVII · bVI · V}
+papelillos, arguililla, tu que vas tan entifá
+fumas chocolate y kiffi y no dejas de fumar
+con la cachimba en la mano, fumando de noche y día
+con mi morita a la vera, mora del amor hería
+{end_of_chorus}
+
+{comment: Punteo (solo) - se repite el riff de la intro}
+
+{start_of_verse: Estrofa 2}
+{grid: i · bVII · bVI · V por línea}
+ya son las diez y es la hora del silencio
+ya se apagaron todas las luces del talego
+y aquí me veo como siempre aquí llorando
+por el amor infiel de una mujer
+y amigo mío eres el novio de la muerte
+y ese es tu grito a la hora de luchar
+pero en amores no valen traición ni muerte
+y esa batalla es más dura de ganar.
+{end_of_verse}
+
+
+{chorus}

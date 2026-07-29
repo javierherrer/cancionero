@@ -1,0 +1,74 @@
+# Fuente: https://acordes.lacuerda.net/benito_kamelas/aquellas_cosas_que_soliamos_hacer.shtml
+# Version de lacuerda: "Benito Kamelas", version principal.
+# Ya esta en Do; los acordes de potencia (Do5, Sol5...) se escriben como acordes
+# completos (Do, Sol, Lam, Mim, Fa) para acompanar cantando. No se transpone.
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Aquellas cosas que solíamos hacer}
+{subtitle: Benito Kamelas}
+{artist: Benito Kamelas}
+{key: Do}
+{capo: 0}
+
+{comment: Tono: Do · rueda: Do · Sol · Lam · Mim · Fa · Do · Sol (constante en toda la canción)}
+
+{comment: Intro (riff con palm mute sobre Do)}
+
+{start_of_verse: Estrofa 1}
+{grid: I · V · vi · iii · IV · I · V}
+Una historia que habla de tiempos vividos,
+donde todo se engloba bajo el mismo signo,
+la amistad, y eran lunas para disfrutar,
+sin pensar mañana que vendrás,
+sin preocuparnos que un día la magia se iba a acabar.
+Y pasa el tiempo y ves que aquellos amigos
+que eran todo lo que te hacía falta
+para atar el camino.
+Ante todo siempre la amistad,
+la familia podía esperar,
+hasta que un día te dejé la vida más solo que na!
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+{grid: I · V · vi · iii · IV · I · V}
+He rebobinao mi vida buscando tu olor,
+e leído las cartas que había en el cajón,
+como ha cambiado la vida que no hace falta razón.
+Donde se fueron las cosas que solíamos hacer,
+aún no es muy tarde pa coger el tren,
+sí que merece la pena,
+que no te quiero perder.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+{grid: I · V · vi · iii · IV · I · V}
+Te acuerdas hace unos años, cuántas risas disfrutamos
+y el mañana nos pintaba genial,
+y mi padre me decía piensa hijo que algún día
+llegará la cruda realidad.
+Y me tiró dentro de la pesadilla,
+una noche se cumplió la profecía
+y un silencio mortal, empiezas a notar que nada será igual.
+Te despiertas cualquier día y tu cara te da pistas
+de la noche que pasaste ayer.
+Y sientes que el agujero está más cerca que lejos,
+tocará ahora ya retroceder,
+cuando ves tu cara dentro del espejo
+y te sientes que tienes muy mal aspecto
+y empiezas a pensar, he de recuperar lo que he dejado atrás.
+{end_of_verse}
+
+{chorus}
+
+{start_of_verse: Estrofa 3}
+{grid: I · V · vi · iii · IV · I · V}
+Una mañana perdía en el pueblo
+busqué tu cara ya no sé dónde está,
+quizás se ha esfumado, no la supe hallar.
+Y ahora me encuentro que apenas me queda nada,
+tus recuerdos, tu alegría a carcajada,
+tu forma de pensar no me pienso olvidar,
+que dónde estarás.
+{end_of_verse}
+
+{chorus}

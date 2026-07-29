@@ -1,0 +1,55 @@
+# Fuente: https://acordes.lacuerda.net/lori_meyers/emborracharme.shtml
+# Version de lacuerda: "Letra y Acordes" (Lori Meyers), version principal.
+# Original en Sol; transportada +5 al tono de Do.
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: Emborracharme}
+{subtitle: Lori Meyers}
+{artist: Lori Meyers}
+{key: Do}
+{capo: 0}
+
+{grid: Tono: I · estrofa: V·I·ii·IV · estribillo: I·vi·ii·V}
+
+{grid: Intro: V · I · ii · IV}
+
+{start_of_verse: Estrofa 1}
+{grid: V · I · ii · IV}
+Empiezo a quererte,
+empiezo a pensar que no hay un día,
+que no quiera verte,
+y demostrar todo el amor que te mereces.
+Y vestiré como tú digas, iré más decente.
+Para poder ir a esos sitios deprimentes.
+Haré de escoba y de felpudo, haré de sirviente.
+Y triturarme el corazón con ingredientes.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+{grid: I · vi · ii · V}
+Y beber todo ese batido,
+acompañarlo después con vino,
+beber hasta emborracharme,
+hasta caer rendido y levantarme.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+{grid: V · I · ii · IV}
+Me levanté tarde
+y la resaca que ahora tengo
+me impide llamarte,
+y con las ganas que ahora tengo de follarte.
+Y me has mandado algún mensaje que vi tarde:
+no va el whatsapp, no carga el vídeo que mandaste.
+{end_of_verse}
+
+{chorus}
+
+{start_of_verse: Coda}
+{grid: I · vi · ii · V}
+Sigo aún borracho perdido,
+pero me atrevo a contarte
+que yo no quiero ser tu amante.
+{end_of_verse}
+
+{comment: 1ª vez la coda dice «…que yo no puedo ser tu amigo» · interludio Fa·Lam·Rem·Sol / Do·Lam·Rem·Sol · se repiten estribillo y coda hasta cerrar con «y yo no quiero ser tu amante»}

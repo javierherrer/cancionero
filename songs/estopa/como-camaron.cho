@@ -1,0 +1,59 @@
+# Fuente: https://acordes.lacuerda.net/estopa/como_camaron.shtml
+# Version de lacuerda: "Letra y Acordes" (Estopa), version principal.
+# Ya esta en Lam; se toca con cejilla en 3 (LAm +3). No se transpone la letra.
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: Como Camarón}
+{subtitle: Estopa}
+{artist: Estopa}
+{key: Lam}
+{capo: 3}
+
+{grid: estrofa (cadencia andaluza): i · bVII · bVI · V · estribillo: bVI · bVII · V · i}
+
+{start_of_verse: Estrofa 1}
+[i]Superior a mí
+es la fuerza que me lleva en el pulso que mantengo,
+con la oscuridad que tiñen de oscuro tus ojos [bVII]negros,
+y qué me cuentas del [bVI]tiempo que pasa en tu pestañeo,
+que me trae por esta calle de amargura y de la[V]mento.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+Que yo sé que la son[bVI]risa que se dibuja en mi [bVII]cara,
+tiene que ver con la [V]brisa que abanica tu mi[i]rada,
+tan despacio y tan de[bVI]prisa, tan normal y tan ex[bVII]traña,
+yo me parto la ca[V]misa como Cama[i]rón.
+Tú me rompes las en[i]trañas, me trepas como una a[bVII]raña,
+bebes del sudor que em[bVI]paña el cristal de mi habita[bVII]ción,
+y después por la mañana despierto y no tengo alas,
+llevo diez horas durmiendo y mi almohada está empapada.
+{end_of_chorus}
+
+{start_of_verse: Puente}
+Todo había sido un [bVI]sueño muy real y muy pro[bVII]fundo,
+tus ojos no tienen [V]dueño porque no son de este [i]mundo...
+{end_of_verse}
+
+{start_of_verse: Estrofa 2}
+Que no te quiero mirar,
+pero es que cierro los ojos y hasta te veo por dentro,
+te veo en un lado y en otro, en cada foto, en cada espejo,
+y en las paradas del metro y en los ojos de la gente,
+hasta en las sopas más calientes loco me estoy volviendo.
+{end_of_verse}
+
+{chorus}
+
+{start_of_verse: Estrofa 3}
+A veces me con[bVI]fundo y pico a tu ve[bVII]cina,
+esa del se[V]gundo que vende cosa [i]fina,
+a veces te espero en el bar de la esquina,
+con la mirada fija en tu portería.
+A veces me como de un bocao el mundo,
+a veces te siento y a veces te tumbo,
+a veces te leo como un beso en los labios,
+como yo no me atrevo me corto y me abro.
+{end_of_verse}
+
+{chorus}

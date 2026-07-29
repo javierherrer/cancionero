@@ -1,0 +1,60 @@
+# Fuente: https://acordes.lacuerda.net/nino_bravo/un_beso_y_una_flor.shtml
+# Version de lacuerda: "Nino Bravo", version principal.
+# Original en La; transportada +3 a Do (Do mayor) para tocar en el tono pedido.
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Un beso y una flor}
+{subtitle: Nino Bravo}
+{artist: Nino Bravo}
+{key: Do}
+{capo: 0}
+
+{grid: Tono: I · estrofa: I·vi / puente: IV·iii·vi · estribillo: I·V·vi·IV}
+
+{comment: Intro (arpegio sobre Fa·Do·Sol·Lam·Sol)}
+
+{start_of_verse: Estrofa 1}
+[I]Dejaré mi tierra por ti,
+[vi]dejaré mis campos y me iré... lejos de aquí.
+[V]Cruzaré llo[I]rando el Jardín
+[vi]y con tus recuerdos partiré... lejos de aquí.
+{end_of_verse}
+
+{start_of_bridge: Puente}
+[IV]De día vi[I]viré
+[iii]pensando en tu son[vi]risa,
+[IV]de noche las es[iii]trellas me acompaña[vi]rán.
+[IV]Serás como una [I]luz
+[iii]que alumbre en mi ca[vi]mino,
+[IV]me voy pero te [I]juro
+[V]que mañana volveré.
+{end_of_bridge}
+
+{start_of_chorus: Estribillo}
+[I]Al partir un [V]beso y una [vi]flor,
+un [I]te quiero, una ca[IV]ricia y un a[I]diós,
+un [IV]ligero equi[iii]paje
+[IV]para tan largo [V]viaje,
+las [I]penas pesan [IV]en el co[V]razón.
+[I]Más allá del [V]mar habrá un lu[vi]gar,
+[I]donde el sol cada ma[IV]ñana brille [I]más,
+[IV]forjarán mi des[iii]tino
+[IV]las piedras del ca[V]mino,
+[I]lo que nos es que[IV]rido siempre que[V]da[I]rá.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+Buscaré un hogar para ti,
+donde el cielo se une con el mar, lejos de aquí.
+Con mis manos y con tu amor
+lograré encontrar otra ilusión, lejos de aquí.
+{end_of_verse}
+
+{start_of_bridge: Puente}
+De día viviré pensando en tu sonrisa,
+de noche las estrellas me acompañarán.
+Serás como una luz que alumbre en mi camino,
+me voy pero te juro que mañana volveré.
+{end_of_bridge}
+
+{chorus}

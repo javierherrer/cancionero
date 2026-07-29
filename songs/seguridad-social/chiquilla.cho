@@ -1,0 +1,73 @@
+# Fuente: https://acordes.lacuerda.net/seguridad_social/chiquilla.shtml
+# Version de lacuerda: "Seguridad Social", version principal.
+# Flamenco "por medio" en Fa, sin cejilla: acordes con cejilla reales (Fa·Solb·Lab·Sib).
+# Alternativa mas facil (mismo sonido): formas de Mi con cejilla en 1.
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Chiquilla}
+{subtitle: Seguridad Social}
+{artist: Seguridad Social}
+{key: Fa}
+{capo: 0}
+
+{comment: Sin cejilla · cadencia flamenca en Fa · estrofa: Fa·Solb·Lab · estribillo: Sib·Fa·Solb}
+
+{start_of_verse: Estrofa 1}
+{comment: Fa · Solb · Lab / remate Solb · Fa}
+Por la mañana yo me levanto,
+y voy corriendo desde mi cama,
+para poder ver a esa chiquilla por mi ventana.
+{end_of_verse}
+
+{start_of_verse: Estrofa 2}
+{comment: Misma rueda que Estrofa 1}
+Es que yo llevo todo el día sufriendo
+y es que la quiero con todo el alma
+y la persigo en mi pensamiento de madrugada.
+{end_of_verse}
+
+{start_of_verse: Estrofa 3}
+{comment: Misma rueda que Estrofa 1}
+Tengo una cosa que me arde dentro,
+que no me deja pensar en nada,
+ay, que no sea de esa chiquilla y de su mirada.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+{grid: IV · I · bII · I · bII · I}
+Y yo la miro
+y ella no me dice nada,
+pero sus dos ojos negros,
+se me clavan como espadas,
+pero sus dos ojos negros,
+se me clavan como espadas.
+¡Ay, chiquilla!
+{end_of_chorus}
+
+{start_of_verse: Estrofa 4}
+{comment: Misma rueda que Estrofa 1}
+Ese silencio que me desvive
+me dice cosas que son tan claras
+que yo no puedo, no puedo, no puedo dejar de mirarla.
+{end_of_verse}
+
+{start_of_verse: Estrofa 5}
+{comment: Misma rueda que Estrofa 1}
+Y yo le tengo que decir pronto
+que estoy loquito de amor por ella,
+y que sus ojos llevan el fuego de alguna estrella.
+Que las palabras se quedan cortas,
+para decir todo lo que siento,
+pues mi chiquilla es lo más bonito del firmamento.
+{end_of_verse}
+
+{chorus}
+
+{start_of_chorus: Final}
+{grid: IV · I · bII · I}
+Y yo la quiero, como el Sol, a la mañana,
+como los rayos de luz a mi ventana,
+yo la quiero como
+los rayos de luz a mi ventana.
+¡Ay, chiquilla!
+{end_of_chorus}

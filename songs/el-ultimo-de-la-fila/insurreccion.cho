@@ -1,0 +1,62 @@
+# Fuente: https://acordes.lacuerda.net/ultimo/insurreccion.shtml
+# Version de lacuerda: "El Ultimo de la Fila", version principal.
+# Original en Sol; transportada +2 a La (La mayor) para tocar en el tono pedido.
+# Modula un tono arriba (La -> Si) despues del primer puente; repite toda la cancion en Si.
+# Fuente cananica en grados: la 2a mitad usa {x_degkey: +2} (misma rueda un tono mas alta).
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Insurrección}
+{subtitle: El Último de la Fila}
+{artist: El Último de la Fila}
+{key: La}
+{capo: 0}
+
+{comment: Tono inicial La; modula a Si (un tono arriba) tras el primer puente}
+
+{grid: Intro: punteo sobre I · IV (x2)}
+
+{start_of_verse: Estrofa 1  [La]}
+{grid: I · IV · V}
+¿Dónde estabas entonces
+cuando tanto te necesité?
+Nadie es mejor que nadie,
+pero tú creíste vencer.
+Si lloré ante tu puerta
+de nada sirvió.
+Barras de bar vertederos de amor,
+os enseñé mi trocito peor.
+Retales de mi vida,
+fotos a contraluz.
+{end_of_verse}
+
+{start_of_chorus: Puente  [La]}
+{grid: V · IV · V · IV · I}
+Me siento hoy como un halcón
+herido por las flechas de la
+incertidumbre.
+{end_of_chorus}
+
+{x_degkey: +2}
+{comment: Sube un tono: La a Si}
+
+{start_of_verse: Estrofa 1  [Si]}
+{grid: I · IV · V}
+Mismas letras que Estrofa 1
+{end_of_verse}
+
+{start_of_verse: Estrofa 2  [Si]}
+{grid: I · IV · V}
+Me corto el pelo una y otra vez.
+Me quiero defender.
+Dame mi alma y déjame en paz.
+Quiero intentar no volver a caer.
+Pequeñas tretas
+para continuar en la brecha.
+{end_of_verse}
+
+{start_of_chorus: Puente final  [Si]}
+{grid: V · IV · V · IV · I}
+Me siento hoy como un halcón
+llamado a las filas de la
+insurrección.
+{end_of_chorus}

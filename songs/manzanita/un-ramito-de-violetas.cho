@@ -1,0 +1,59 @@
+# Fuente: https://acordes.lacuerda.net/manzanita/un_ramito_de_violetas.shtml
+# Version de lacuerda: "Letra y Acordes" — valoracion 7.47 (59 opiniones).
+# Original en Solm; transportada +2 a Lam (La menor) para tocar en el tono pedido.
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Un ramito de violetas}
+{subtitle: Manzanita}
+{artist: Manzanita}
+{key: Lam}
+{capo: 0}
+
+{comment: Tono: Lam · estrofa: Rem·Sol·Do / Mi·Mi7·Lam · estribillo con caminata Rem-Re#-Mi hacia el Fa}
+
+{start_of_verse: Estrofa 1}
+[i]Era feliz en su ma[iv]trimonio,
+aunque su ma[V]rido era el [V7]mismo de[i]monio;
+tenía el [iv]hombre un poco de [bVII]mal [bIII]genio,
+ella se que[V]jaba de que [V7]nunca fue [i]tierno.
+[V7]Desde hace ya, más de tres [i]años
+re[bVII]cibe cartas de [bVII7]un ex[bIII]traño:
+[V]cartas [V7]llenas de [i]poesía que le han de[iv]vuelto [V7]la ale[i]gría.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[i]Quién te escribía a ti versos,
+dime niña quién [iv]era,
+y [bVII]te mandaba flores por prima[bIII]vera,
+y [i]cada nueve de no[iv]viembre,
+como siempre sin tar[bVI]jeta,
+te [iv]mandaba a ti un [V]ramito [V7]de vio[i]letas.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+A veces sueña ella y se imagina
+cómo será aquel que a ella tanto la estima:
+será más bien hombre de pelo cano,
+sonrisa abierta y ternura en sus manos.
+Quién era, quién sufre en silencio,
+quién puede ser su amor secreto,
+y ella que no sabe nada,
+mira a su marido y luego se calla.
+{end_of_verse}
+
+{chorus}
+
+{start_of_verse: Estrofa 3}
+Cada tarde al volver su esposo,
+cansado del trabajo, va y la mira de reojo;
+no dice nada porque él lo sabe todo,
+ella es así, feliz de cualquier modo,
+porque él es quien le escribe versos,
+él es su amante, su amor secreto,
+y ella que no sabe nada,
+mira a su marido y luego se calla.
+{end_of_verse}
+
+{chorus}
+
+{comment: Final: repetir el estribillo (…sharaila…) hasta cerrar}

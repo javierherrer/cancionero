@@ -1,0 +1,48 @@
+# Fuente: https://acordes.lacuerda.net/musica_de_tuna/si_vas_a_calatayud.shtml
+# Copla popular (La Dolores). Subida a Do por petición del usuario.
+# Se toca sin cejilla, alternando el color mayor/menor de la copla.
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Si vas a Calatayud}
+{subtitle: Copla popular - La Dolores}
+{artist: Salvador Valverde}
+{key: Do}
+{capo: 0}
+
+{comment: Vals-copla. Estrofa mayor (Do·Sol7) y menor (Dom·Mib dim·Sol7). Puente Sib7·Mib. Estribillo en Do (Sol7·Do)}
+
+{start_of_verse: Estrofa 1}
+[I]Porque era amiga de hacer fa[V7]vores,
+porque fue alegre su ju[I]ventud.
+[i]En coplas se [biii°]vió la Do[V7]lores, la flor de Cala[i]tayud.
+Una jo[bVII7]tica recorrió Es[bIII]paña,
+pregón de in[bVII7]famia de una mu[bIII]jer,
+y el buen [V7]nombre de aquella [i]maña,
+[bVI]yo tengo que de[V]fender.
+{end_of_verse}
+
+{comment: (recitado) "La Dolores de la copla, me dijo un día mi padre, fue alegre, pero fue buena; fue mi mujer, fue tu madre."}
+
+{start_of_chorus: Estribillo}
+[V7]Si vas a Cala[I]yud, si vas a Cala[V7]yud,
+pregunta por la Do[I]lores, una copla la ma[V7]tó
+de vergüenza y sin sa[I]bores.
+Ve que te lo [V7]digo yo: el hijo de la Do[I]lores.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+Dicen los mozos de la ribera,
+que por la calle la ven pasar.
+No sabe su madre quién era, Dolores la del cantar.
+Él la quería con amor bueno, y a su cariño él defendió,
+mas no quiso matar al hombre, que la maldad le arrojó.
+{end_of_verse}
+
+{comment: (recitado) "Copla que vas dando muerte, con el alma te maldigo; fuiste dolor de mi madre, pero no podrás conmigo."}
+
+{start_of_chorus: Estribillo final}
+[V7]Si vas a Cala[I]yud, si vas a Cala[V7]yud,
+pregunta por la Do[I]lores, y en ofrenda de su a[V7]mor,
+en su tumba ponle [I]flores.
+Ve que te lo [V7]digo yo: el hijo de la Do[I]lores.
+{end_of_chorus}

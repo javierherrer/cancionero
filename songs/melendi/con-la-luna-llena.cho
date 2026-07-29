@@ -1,0 +1,55 @@
+# Fuente: https://acordes.lacuerda.net/melendi/con_la_luna_llena.shtml
+# Version de lacuerda: "Letra y Acordes" (Melendi), version principal.
+# Original en Mi/Do#m; transportada -4 al tono de Do (estribillo Do, estrofa Lam7).
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: Con la luna llena}
+{subtitle: Melendi}
+{artist: Melendi}
+{key: Do}
+{capo: 0}
+
+{grid: Tono: I · estrofa: vi7·IV·V·III7 · estribillo: I·V·IV·III7}
+
+{grid: Intro: I · iv6 · V · IV · III7sus4 · III7}
+
+{start_of_verse: Estrofa 1}
+[vi7]Sentado en un coche de [IV]hielo, que se derrite cada amanecer,
+no [V]puedo pedirte que te quedes hasta ma[III7]ñana. Pedirte que me
+en[vi7]redes hoy en tu pelo. Quisiera ir de la [IV]mano de este
+sentimiento que llevo tan [V]dentro y me cuesta tanto, tener
+callado cuando te en[III7sus4]cuen[III7]tro.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+Porque te quiero como el [I]mar, quiere a un pez que nada
+[V]dentro dándole de respi[IV]rar, protegiéndolo del [III7sus4]vien[III7]to,
+porque te quiero dibu[I]jar, desnuda en el firma[V]mento pa hacer
+toavía más bo[IV]nito, ma bonito en uni[III7sus4]ver[III7]so...
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+Pa subirme a un te[vi7]jado con cara de pena y tocarte una [IV]teta
+sin que me veas. Y hacer bien la ma[V]leta pa quedarme en casa
+jugando un par[III7sus4]chís con la [III7]luna llena.
+Porque es[vi7]tá muy deprimida y se está vol[III7]viendo loca porque
+el [IV]sol ya no la mima, porque el sol ya [III7]no la toca. Pero
+cuan[IV]do se ponga buena brillará en tu ven[vi7]tana morena pa
+de[III7]cir con luz blanca y sincera que esta [IV]noche: quiero
+morirme a tu [III7]vera.
+{end_of_verse}
+
+{chorus}
+
+{comment: Solo de guitarra: Do · Sol · Fa · Mi7}
+
+{start_of_verse: Puente}
+Qui[IV]siera ser tu a[V]muleto y veneno en tu [vi7]aire. Qui[IV]siera ser
+para ti [V]un vicio inconfe[vi7]sable, yo quisiera lle[V]gar hasta
+[I]marte des[IV]nudo sobre tu [vi7]cama. Quisiera [I]volver a hechizar[V]me
+en tu bruja mi[IV]rada.
+{end_of_verse}
+
+{chorus}
+
+{comment: Repite el estribillo 3 veces fundiéndose}

@@ -1,0 +1,55 @@
+# Fuente: https://acordes.lacuerda.net/fondo_flamenco/mi_estrella_blanca.shtml
+# Version de lacuerda: "Letra y Acordes" (Fondo Flamenco), version principal.
+# Ya esta en Lam; se toca con cejilla en 3 (LAm +3). No se transpone la letra.
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: Mi estrella blanca}
+{subtitle: Fondo Flamenco}
+{artist: Fondo Flamenco}
+{key: Lam}
+{capo: 3}
+
+{grid: cadencia andaluza: i · bVII · bVI · V · estrofa sobre: V · bVI · bVII · bIII}
+
+{grid: Intro: punteo sobre i · bVII · bVI · V}
+
+{start_of_verse: Estrofa 1}
+[V]Una vez soñé lo que el futuro me de[bVI]paraba,
+[bVII]había un patio andaluz, mi niño toca la gui[bIII]tarra.
+El otro se echaba un [bVI]cante,
+mi mujer y [bVII]niña bailaban al compás de bu[bVI]lería,
+[bVII]mientras le [bVI]toco las [V]palmas.
+{end_of_verse}
+
+{start_of_verse: Puente}
+[V]Los sueños, sueños son.
+Y el destino deci[bVI]dirá, lo que el fu[bVII]turo me espera,
+si mis sueños se cumpli[bIII]rán,
+y a Dios le estoy pi[bVI]diendo que se haga reali[bVII]dad,
+pues me paso el día dur[bVI]mien[bVII]do, para encon[bVI]trar la feli[V]cidad.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[i]Poder besarla cada mañana,
+mirar «pa» el lado y ver la tumbada en mi [bVII]cama.
+[bVI]Será mi noche, será mis día... mi es[V]trella blanca.
+[V]Y una casita en el barrio de Santa [i]Cruz,
+un ventanal y un pequeño patio anda[bVII]luz,
+enredaderas que suben por la esca[bVI]lera,
+por una reja se desorienta la [V]luz.
+Y cuando llega la noche a mi ven[i]tana,
+cojo jazmín y huele a flor de mi [bVII]dama,
+en mi vieja mecedora quedé dor[bVI]mío,
+al des[bVII]pertar del [bVI]sueño todo se ha[V]bía ido.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+Ya encontré la que será mi futura esposa,
+la madre de mis tres hijos, sevillana guapa y hermosa.
+Al bailar parece que vuelan, sus pies son de oro puro,
+cásate conmigo flamenca, que amor eterno yo a ti te juro.
+{end_of_verse}
+
+{chorus}
+
+{comment: La parte «Poder besarla cada mañana…» se repite 2 veces}
