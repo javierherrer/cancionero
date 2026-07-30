@@ -7,6 +7,15 @@
 
   "diagrams": { "show": "all" },
 
+  "contents": [
+    {
+      "fields": [ "songindex" ],
+      "label": "Índice",
+      "line": "%{title}%{artist| - %{}}",
+      "pageno": "%{page}"
+    }
+  ],
+
   "pdf": {
     "papersize": "a4",
     "pagealign-songs": 0,
@@ -19,6 +28,16 @@
     "headspace": 32,
     "footspace": 14,
     "head-first-only": true,
+
+    "outlines": [
+      {
+        "fields": [ "songindex" ],
+        "label": "Canciones",
+        "line": "%{title}%{artist| - %{}}",
+        "letter": 0,
+        "fold": false
+      }
+    ],
 
     "spacing": {
       "title": 1.0,

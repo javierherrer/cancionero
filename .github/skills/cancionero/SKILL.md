@@ -68,6 +68,14 @@ Salida: `dist\{guitarra,bajo}\<artista>\<cancion>.pdf` y
 5. **Verifica 1 pagina** (ver Verificacion). Si se va a 2, anade `{columns: 2}` tras la
    cabecera o compacta con `{grid}`.
 6. Revisa que la **variante guitarra reproduce exactamente** los acordes que querias.
+7. Anade la ruta `<artista>/<cancion>.cho` a `config/orden.txt` en la posicion deseada del
+   cancionero (si no aparece, va al final).
+
+## Orden del cancionero
+El orden de las canciones del cancionero (`-Songbook`) y de su indice unico lo fija
+`config/orden.txt` (una ruta `<artista>/<cancion>.cho` por linea; las no listadas van al
+final). El indice impreso y los marcadores del PDF usan ese orden via `songindex` en
+`contents`/`pdf.outlines` de `config/chordpro.json`.
 
 ## Flujo: editar tono, cejilla o simplificar
 - **Cambiar tono/cejilla**: edita solo `{key}` y/o `{capo}`; ambos releases se regeneran

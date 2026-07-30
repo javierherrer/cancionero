@@ -43,7 +43,8 @@ guitar/
 │   ├── render.py          # expande grados → dist\_build\{guitarra,bajo}
 │   └── build.ps1          # compila los PDF (por release)
 ├── config/
-│   └── chordpro.json      # estilo del PDF + notación española
+│   ├── chordpro.json      # estilo del PDF + notación española
+│   └── orden.txt          # orden de las canciones en el cancionero
 ├── templates/
 │   └── plantilla.cho      # plantilla para empezar una canción nueva
 ├── dist/                  # 📄 artefactos de build (no se versiona)

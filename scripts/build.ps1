@@ -71,6 +71,25 @@ if ($Song) {
 }
 if (-not $songs) { Write-Warning "No hay canciones .cho en $songsDir"; return }
 
+# Orden explícito del cancionero (config\orden.txt). Las no listadas van al final (alfabético).
+$orderFile = Join-Path $Root 'config\orden.txt'
+if ((-not $Song) -and (Test-Path $orderFile)) {
+    $rank = @{}
+    $idx  = 0
+    foreach ($line in Get-Content -LiteralPath $orderFile) {
+        $rel = $line.Trim()
+        if (-not $rel -or $rel.StartsWith('#')) { continue }
+        $rank[$rel.Replace('/', '\')] = $idx
+        $idx++
+    }
+    $songs = $songs | Sort-Object `
+        @{ Expression = {
+            $rel = $_.Substring($songsDir.Length).TrimStart('\', '/')
+            if ($rank.ContainsKey($rel)) { $rank[$rel] } else { [int]::MaxValue }
+        } }, `
+        @{ Expression = { $_ } }
+}
+
 Write-Host "chordpro : $chordpro" -ForegroundColor DarkGray
 Write-Host "config   : $Config"   -ForegroundColor DarkGray
 if ($Variant) { Write-Host "variant  : $Variant" -ForegroundColor DarkGray }

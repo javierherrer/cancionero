@@ -1,0 +1,20 @@
+# Orden del cancionero (para el PDF -Songbook y el indice).
+# Una ruta relativa songs/<artista>/<cancion>.cho por linea, en orden.
+# Lineas vacias o que empiezan por # se ignoran.
+# Las canciones que no aparezcan aqui van al final, en orden alfabetico.
+los-moles/el-legionario-y-la-morita.cho
+manzanita/un-ramito-de-violetas.cho
+los-rebujitos/todos-los-besos.cho
+los-delinquentes/el-aire-de-la-calle.cho
+fondo-flamenco/mi-estrella-blanca.cho
+melendi/con-la-luna-llena.cho
+melendi/caminando-por-la-vida.cho
+estopa/como-camaron.cho
+lori-meyers/emborracharme.cho
+aitana/superestrella.cho
+maldita-nerea/el-secreto-de-las-tortugas.cho
+el-ultimo-de-la-fila/insurreccion.cho
+seguridad-social/chiquilla.cho
+benito-kamelas/aquellas-cosas-que-soliamos-hacer.cho
+nino-bravo/un-beso-y-una-flor.cho
+salvador-valverde/si-vas-a-calatayud.cho
