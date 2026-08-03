@@ -25,7 +25,8 @@ sin cejilla ni diagramas). Cada cancion cabe en **una pagina** (para el iPad, si
 - Dos directivas de cabecera fijan la tonalidad: `{key: <forma>}` + `{capo: N}`. Notacion
   tipo lacuerda: **"LAm +3" = `{key: Lam}` `{capo: 3}`** (La menor, cejilla en el 3er traste).
 - `scripts/render.py` expande los grados a **dos** juegos en `dist/_build/{guitarra,bajo}`:
-  - **guitarra** -> tono de forma (`{key}`), conserva `{capo}`, con diagramas.
+  - **guitarra** -> tono de forma (`{key}`), conserva `{capo}` y, si hay cejilla,
+    la anota en el `{subtitle}` como `... · Cejilla N`; con diagramas.
   - **bajo** -> tono real (`{key}` transpuesto `+{capo}`), sin cejilla, sin diagramas ni tablaturas.
 - `scripts/build.ps1` compila esos `.cho` a PDF con ChordPro.
 - Notacion **espanola** (Do Re Mi Fa Sol La Si) via `config/chordpro.json`.

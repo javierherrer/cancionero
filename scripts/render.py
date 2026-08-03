@@ -41,6 +41,7 @@ _GRID_TOK = re.compile(
 
 _KEY_RE   = re.compile(r'^\{key:\s*([^}]+)\}\s*$')
 _CAPO_RE  = re.compile(r'^\{capo:\s*([^}]+)\}\s*$')
+_SUBTITLE_RE = re.compile(r'^\{subtitle:\s*(.*)\}\s*$')
 _GRID_RE  = re.compile(r'^\{grid:\s*(.*)\}\s*$')
 _DEGKEY_RE = re.compile(r'^\{x_degkey:\s*([^}]+)\}\s*$')
 _INLINE_RE = re.compile(r'\[([^\]]+)\]')
@@ -125,6 +126,15 @@ def render_song(path, target):
                 out.append('{capo: %d}' % capo)
             else:
                 out.append('{diagrams: off}')
+            continue
+
+        # {subtitle}: en guitarra anota la cejilla si la hay (coste vertical cero)
+        m = _SUBTITLE_RE.match(ln)
+        if m:
+            sub = m.group(1).strip()
+            if target == 'guitarra' and capo > 0:
+                sub = '%s \u00b7 Cejilla %d' % (sub, capo)
+            out.append('{subtitle: %s}' % sub)
             continue
 
         # Tabs: solo guitarra

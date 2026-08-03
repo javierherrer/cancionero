@@ -89,7 +89,7 @@ Los acordes van **inline**, entre corchetes, justo delante de la sílaba del cam
 | `{title: ...}` | Título |
 | `{subtitle: ...}` / `{artist: ...}` | Artista |
 | `{key: <forma>}` | **Tono de forma** para la guitarra (p. ej. `Lam`). Define la tónica de los grados |
-| `{capo: N}` | **Cejilla** en el traste N (solo guitarra). El bajo lo convierte en transposición real |
+| `{capo: N}` | **Cejilla** en el traste N (solo guitarra; se muestra como `· Cejilla N` en el subtítulo). El bajo lo convierte en transposición real |
 | `{grid: ...}` | **Rueda de acordes en grados** (zona “de máquina”: se expande al tono de salida) |
 | `{x_degkey: +N}` / `{x_degkey: Nota}` | **Modulación**: mueve la tónica de los grados a partir de ese punto |
 | `{comment: ...}` | Nota **literal** visible (caja gris). Texto en prosa; **no** se transpone |
@@ -172,6 +172,7 @@ Partiendo de una canción con `{key: Lam}` + `{capo: 3}` (forma Lam, suena en Do
 |---|---|---|
 | Tónica de salida | `Lam` (la forma) | `Dom` (tono real = forma + cejilla) |
 | `{capo}` | se conserva | se elimina; se aplica como transposición |
+| `{subtitle}` | `Artista · Cejilla 3` (etiqueta visible) | `Artista` (sin cejilla) |
 | Diagramas | sí | no (`{diagrams: off}`) |
 | Tablaturas `{sot}` | se conservan | se eliminan |
 | Un grado `i` | `Lam` | `Dom` |
