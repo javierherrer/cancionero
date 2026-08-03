@@ -9,19 +9,15 @@
 {key: Lam}
 {capo: 0}
 
-{comment: Tono: Lam · estrofa: Do·Sol·Lam (remate: Fa·Sol·Lam) · estribillo: Lam·Mim·Rem·Mim}
-
 {start_of_verse: Estrofa 1}
-{comment: Do · Sol · Lam / remate Fa · Sol · Lam}
-Yo me levanto temprano y me pongo a trabajar,
+[bIII]Yo me levanto [bVII]temprano y me pongo [i]a trabajar,
 con mi guitarra en la mano nunca paro de cantar.
 Que a mí me llaman el descalzo porque en invierno uso chanclas,
 y yo lo hago pa notarme en el fresquito de la mañana.
-Tol día en la calle, en la plazuela tomando el aire.
+Tol día en la [bVI]calle, en la [bVII]plazuela [i]tomando el aire.
 {end_of_verse}
 
 {start_of_verse: Estrofa 2}
-{comment: Misma rueda que Estrofa 1}
 Soy un bohemio de la vida, que yo no tengo nada que ver
 con los bigotes señoriales que se pasean por Jerez.
 Si no tengo obligaciones, si yo no tengo más que ver
@@ -30,15 +26,13 @@ Los días de colores, en la plazuela fumando flores.
 {end_of_verse}
 
 {start_of_chorus: Estribillo}
-{grid: i · v · iv · v}
-Y el aire de la calle a mí me huele a goma fresca,
+Y el [i]aire de la [v]calle a mí me [iv]huele a goma [v]fresca,
 yo lo asumo me lo fumo y me escapo por la cuesta.
 Te quiero, te quiero como las peras a los peros,
 te amo, yo te amo cuando te pierdo y cuando te gano.
 {end_of_chorus}
 
 {start_of_verse: Estrofa 3}
-{comment: Do · Sol · Lam / cierre libre}
 Los pantalones sin bolsillos, pero los hilos no se amargan.
 Te canto la nana en el banco, te canto en la calle larga.
 Lo mismo te canto un fandango que te canto por Triana.
@@ -47,7 +41,6 @@ No quiero amores, soy vagabundo y amante de la noche.
 {end_of_verse}
 
 {start_of_chorus: Estribillo (2ª vez)}
-{grid: i · v · iv · v}
 Y el aire de la calle a mí me huele a goma fresca,
 yo lo asumo me lo fumo y me escapo por la cuesta.
 Que pena, mira qué pena, que mi mechero no tiene piedra,
@@ -55,8 +48,7 @@ quién pudiera, quién pudiera, quitar olores en la arena.
 {end_of_chorus}
 
 {start_of_verse: Cierre}
-{comment: Lam · Mim · Rem · Mim}
-Veneno negro yo tengo en la sangre,
+[i]Veneno [v]negro yo tengo [iv]en la [v]sangre,
 en mis brazos tengo cinco tatuajes.
 Yo nunca lloro porque vivo en carnavales,
 me pongo la careta y me lanzo a la calle...

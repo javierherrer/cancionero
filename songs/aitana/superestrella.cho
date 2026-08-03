@@ -8,39 +8,33 @@
 {key: Mi}
 {capo: 0}
 
-{comment: Tono: Mi · rueda base constante: Mi · Fa#m · La · Mi}
-
 {start_of_verse: Estrofa 1}
-{grid: I · ii · IV · I}
-Me ve entrando en la disco, y se me queda mirando,
-creo que me ha conocido, será uno más de tantos.
-Quizá eres mi próximo error (mi próximo error).
-Estoy con mis amigas de reojo mirándote,
-queda tan bien esa camisa de Versace,
-hoy vas a ser mi próximo error (mi próximo error).
+Me ve [I]entrando en la disco, y se me queda mirando,
+creo [ii]que me ha conocido, será uno más de tantos.
+[IV]Quizá eres mi [I]próximo error (mi próximo error).
+Estoy con mis amigas de reojo [ii]mirándote,
+queda tan bien esa camisa de [IV]Versace,
+hoy vas a ser mi [I]próximo error (mi próximo error).
 {end_of_verse}
 
 {start_of_bridge: Pre-estribillo}
-{grid: I · ii · IV · I}
-Dónde diablo se habrá metido,
-no está en el baño ni en los pasillos,
-está en la barra y viene directo a mí.
+[I]Dónde diablo se habrá [ii]metido,
+no está en el baño ni en los [IV]pasillos,
+está en la barra y viene [I]directo a mí.
 {end_of_bridge}
 
 {start_of_chorus: Estribillo}
-{grid: I · ii · IV · I}
-Él me dice que quiere divertirse,
-yo le digo que los rumores vuelan,
-él me dice que no le importa estar
-con una superestrella.
+Él me dice que [I]quiere divertirse,
+yo le digo que los [ii]rumores vuelan,
+él me dice que no le [IV]importa estar
+con una [I]superestrella.
 Yo le digo: ¿de dónde tú has salido?
-Él me dice que quiere estar conmigo,
-yo le digo que no es fácil enamorarse
-de una superestrella.
+Él me dice que quiere [ii]estar conmigo,
+yo le digo que no es fácil [IV]enamorarse
+de una [I]superestrella.
 {end_of_chorus}
 
 {start_of_verse: Estrofa 2}
-{grid: I · ii · IV · I}
 Aquí está todo el mundo mirando,
 vamos solos al baño y retomamos lo que estamos empezando.
 Sólo quiero conocerte un poco más, supongo que no lo he pensado bien,
@@ -50,7 +44,6 @@ tatuarme tu apellido, querernos para toda la vida.
 {end_of_verse}
 
 {start_of_bridge: Pre-estribillo}
-{grid: I · ii · IV · I}
 Y no sé qué diablos estamos haciendo,
 no te conozco pero me estoy muriendo,
 vámonos ya de aquí, hoy soy toda para ti.

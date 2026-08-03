@@ -9,14 +9,11 @@
 {key: Do}
 {capo: 0}
 
-{grid: Tono: I · estrofa: V·I·ii·IV · estribillo: I·vi·ii·V}
-
 {grid: Intro: V · I · ii · IV}
 
 {start_of_verse: Estrofa 1}
-{grid: V · I · ii · IV}
-Empiezo a quererte,
-empiezo a pensar que no hay un día,
+[V]Empiezo a [I]quererte,
+[ii]empiezo a pensar que no hay un [IV]día,
 que no quiera verte,
 y demostrar todo el amor que te mereces.
 Y vestiré como tú digas, iré más decente.
@@ -26,15 +23,13 @@ Y triturarme el corazón con ingredientes.
 {end_of_verse}
 
 {start_of_chorus: Estribillo}
-{grid: I · vi · ii · V}
-Y beber todo ese batido,
-acompañarlo después con vino,
-beber hasta emborracharme,
-hasta caer rendido y levantarme.
+[I]Y beber todo ese batido,
+[vi]acompañarlo después con vino,
+[ii]beber hasta emborracharme,
+[V]hasta caer rendido y levantarme.
 {end_of_chorus}
 
 {start_of_verse: Estrofa 2}
-{grid: V · I · ii · IV}
 Me levanté tarde
 y la resaca que ahora tengo
 me impide llamarte,
@@ -46,10 +41,13 @@ no va el whatsapp, no carga el vídeo que mandaste.
 {chorus}
 
 {start_of_verse: Coda}
-{grid: I · vi · ii · V}
-Sigo aún borracho perdido,
-pero me atrevo a contarte
-que yo no quiero ser tu amante.
+[I]Sigo aún borracho per[vi]dido,
+[ii]pero me atrevo a contarte
+que yo no [V]quiero ser tu amante.
 {end_of_verse}
 
-{comment: 1ª vez la coda dice «…que yo no puedo ser tu amigo» · interludio Fa·Lam·Rem·Sol / Do·Lam·Rem·Sol · se repiten estribillo y coda hasta cerrar con «y yo no quiero ser tu amante»}
+{comment: 1ª vez la coda dice «…que yo no puedo ser tu amigo»}
+
+{grid: Interludio: IV · vi · ii · V / I · vi · ii · V}
+
+{comment: Se repiten estribillo y coda hasta cerrar con «y yo no quiero ser tu amante»}

@@ -10,8 +10,6 @@
 {key: Lam}
 {capo: 3}
 
-{grid: Cadencia andaluza · progresión base por línea: i · bVII · bVI · V}
-
 {start_of_tab: Intro (punteo)}
 E----------------------------------------------1-1-1-0-----------------0-0-
 B----0-1-1-1-1-1-1-0---1---------0-1-1-1-1-1-1---------3-0-0-1-3-3-3-3--3--
@@ -29,33 +27,30 @@ E-----------------------------------------------------
 {end_of_tab}
 
 {start_of_verse: Estrofa 1}
-{grid: i · bVII · bVI · V por línea}
-Y estando un día en un burdel de casa blanca,
-un legionario de una morita se enamoró
-y fue tan grande el amor de aquel legía,
-que al poco tiempo con la mora se casó
-pasaron horas de alegrías y de placeres,
-y en el trayecto de melilla a casa blanca
-tras una noche embriagado por el kiffi,
-a la morita sorprendió en un cabaret
-lleno de ira sin saber lo que se hacía,
-sacó la pusca y a la ingrata disparó
-hizo de blanco lo ligó la policía,
-y a la morita entre tanto le cantó.
+Y estando un [i]día en un burdel de casa blanca,
+un legionario de una morita se [bVII]enamoró
+y fue tan grande el amor de aquel [bVI]legía,
+que al poco tiempo con la mora se [V]casó
+pasaron [i]horas de alegrías y de placeres,
+y en el trayecto de melilla a casa [bVII]blanca
+tras una noche embriagado por el [bVI]kiffi,
+a la morita sorprendió en un [V]cabaret
+lleno de ira sin [i]saber lo que se hacía,
+sacó la pusca y a la ingrata [bVII]disparó
+hizo de blanco lo ligó la [bVI]policía,
+y a la morita entre tanto le [V]cantó.
 {end_of_verse}
 
 {start_of_chorus: Estribillo}
-{grid: i · bVII · bVI · V}
-papelillos, arguililla, tu que vas tan entifá
-fumas chocolate y kiffi y no dejas de fumar
-con la cachimba en la mano, fumando de noche y día
-con mi morita a la vera, mora del amor hería
+[i]papelillos, arguililla, tu que vas [bVII]tan entifá
+fumas chocolate y [bVI]kiffi y no dejas de [V]fumar
+con la cachimba en la [i]mano, fumando de noche y [bVII]día
+con mi morita a la [bVI]vera, mora del amor [V]hería
 {end_of_chorus}
 
 {comment: Punteo (solo) - se repite el riff de la intro}
 
 {start_of_verse: Estrofa 2}
-{grid: i · bVII · bVI · V por línea}
 ya son las diez y es la hora del silencio
 ya se apagaron todas las luces del talego
 y aquí me veo como siempre aquí llorando

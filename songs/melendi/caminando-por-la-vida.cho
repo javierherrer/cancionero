@@ -9,18 +9,14 @@
 {key: Do}
 {capo: 0}
 
-{comment: Tono: Do · estrofa por líneas: Lam·Sol / Do·Sol / Fa·Do / Sol·Fa · estribillo: Do·Sol·Lam·Fa}
-
 {start_of_verse: Estrofa 1}
-{grid: vi · V / I · V / IV · I / V · IV}
-Huele a aire de primavera,
-tengo alergia en el corazón,
-voy cantando por la carretera,
-de copiloto llevo el sol.
+[vi]Huele a aire [V]de primavera,
+[I]tengo alergia en el [V]corazón,
+[IV]voy cantando por la [I]carretera,
+[V]de copiloto llevo [IV]el sol.
 {end_of_verse}
 
 {start_of_verse: Estrofa 2}
-{comment: Misma rueda que Estrofa 1}
 Y a mí no me hace falta estrella
 que me lleve hasta tu portal,
 como ayer estaba borracho
@@ -28,17 +24,15 @@ fui tirando migas de pan.
 {end_of_verse}
 
 {start_of_chorus: Estribillo}
-{grid: I · V · vi · IV}
-Voy caminando por la vida, sin pausa, pero sin prisas,
-procurando no hacer ruido, vestío con una sonrisa,
-sin complejo ni temores,
-canto rumbas de colores,
-y el llorar no me hace daño siempre y cuando tu no llores aaaeeeyyy,
-siempre y cuando tu no llores aaaeeeyyy.
+[I]Voy caminando [V]por la vida, sin pausa, [vi]pero sin prisas,
+[IV]procurando no hacer ruido, vestío con una [I]sonrisa,
+sin complejo ni [V]temores,
+canto rumbas [vi]de colores,
+y el llorar no me [IV]hace daño siempre y [I]cuando tu no [V]llores aaaeeeyyy,
+siempre y cuando tu [vi]no llores [IV]aaaeeeyyy.
 {end_of_chorus}
 
 {start_of_verse: Estrofa 3}
-{comment: Misma rueda que Estrofa 1}
 Y el milindri a mí me llaman
 en el mundillo calé,
 porque al coger mi guitarra
@@ -46,7 +40,6 @@ se me van solos los pies.
 {end_of_verse}
 
 {start_of_verse: Estrofa 4}
-{comment: Misma rueda que Estrofa 1}
 Y este año le pido al cielo
 la salud del anterior.
 No necesito dinero,
@@ -56,15 +49,14 @@ voy sobrao en el amor.
 {chorus}
 
 {start_of_verse: Puente}
-{grid: vi · I · V · IV}
-Y no quiero amores,
-no correspondidos no quiero guerras,
-no quiero amigos
-que no me quieran sin mis galones.
-No me tires flores,
-ni falsas miradas de inexpresión
-que no dicen nada
-del corazón que me las propone.
+Y no quiero a[vi]mores,
+no corres[I]pondidos no quiero guerras,
+no quiero a[V]migos
+que no me quieran sin [IV]mis galones.
+No me tires [vi]flores,
+ni falsas mi[I]radas de inexpresión
+que no dicen [V]nada
+del corazón que me las [IV]propone.
 {end_of_verse}
 
 {chorus}

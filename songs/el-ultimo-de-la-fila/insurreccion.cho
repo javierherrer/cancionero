@@ -16,47 +16,40 @@
 {grid: Intro: punteo sobre I · IV (x2)}
 
 {start_of_verse: Estrofa 1  [La]}
-{grid: I · IV · V}
-¿Dónde estabas entonces
-cuando tanto te necesité?
-Nadie es mejor que nadie,
-pero tú creíste vencer.
-Si lloré ante tu puerta
-de nada sirvió.
-Barras de bar vertederos de amor,
-os enseñé mi trocito peor.
-Retales de mi vida,
-fotos a contraluz.
+[I]¿Dónde estabas [IV]entonces
+cuando [I]tanto te [IV]necesité?
+[I]Nadie es mejor que [IV]nadie,
+pero [iii]tú creíste [IV]vencer.
+[I]Si lloré ante tu [IV]puerta
+de nada [iii]sirvió. [V]
+Barras de [I]bar [IV]vertederos de [I]amor,
+os [I]enseñé mi [IV]trocito [V]peor.
+Retales de mi [I]vida,
+[IV]fotos a [I]contraluz.
 {end_of_verse}
 
 {start_of_chorus: Puente  [La]}
-{grid: V · IV · V · IV · I}
-Me siento hoy como un halcón
-herido por las flechas de la
-incertidumbre.
+[V]Me siento [IV]hoy como un [V]halcón
+herido [IV]por las flechas de la
+[I]incertidumbre.
 {end_of_chorus}
 
 {x_degkey: +2}
 {comment: Sube un tono: La a Si}
 
-{start_of_verse: Estrofa 1  [Si]}
-{grid: I · IV · V}
-Mismas letras que Estrofa 1
-{end_of_verse}
+{comment: Estrofa 1 [Si]: mismas letras y rueda que la Estrofa 1}
 
 {start_of_verse: Estrofa 2  [Si]}
-{grid: I · IV · V}
-Me corto el pelo una y otra vez.
-Me quiero defender.
-Dame mi alma y déjame en paz.
-Quiero intentar no volver a caer.
-Pequeñas tretas
-para continuar en la brecha.
+[I]Me corto el [IV]pelo una y [I]otra vez.
+[I]Me quiero [iii]defender.
+Dame mi [I]alma y [IV]déjame en [I]paz.
+Quiero [I]intentar no [IV]volver a [iii]caer.
+Pequeñas [I]tretas
+[IV]para [I]continuar en la [IV]brecha.
 {end_of_verse}
 
 {start_of_chorus: Puente final  [Si]}
-{grid: V · IV · V · IV · I}
-Me siento hoy como un halcón
-llamado a las filas de la
-insurrección.
+[V]Me siento [IV]hoy como un [V]halcón
+llamado [IV]a las filas de la
+[I]insurrección.
 {end_of_chorus}

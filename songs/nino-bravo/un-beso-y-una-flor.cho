@@ -9,9 +9,8 @@
 {key: Do}
 {capo: 0}
 
-{grid: Tono: I · estrofa: I·vi / puente: IV·iii·vi · estribillo: I·V·vi·IV}
-
-{comment: Intro (arpegio sobre Fa·Do·Sol·Lam·Sol)}
+{comment: Intro (arpegio)}
+{grid: IV · I · V · vi · V}
 
 {start_of_verse: Estrofa 1}
 [I]Dejaré mi tierra por ti,

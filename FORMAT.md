@@ -99,23 +99,36 @@ Los acordes van **inline**, entre corchetes, justo delante de la sílaba del cam
 | `{start_of_tab: ...}` … `{end_of_tab}` | Tablatura (solo guitarra; el bajo la **elimina**) |
 | `# ...` | Comentario que **no** sale en el PDF (fuente, notas de trabajo) |
 
-### `{grid}` vs `{comment}` — importante
+### Acordes: `[grado]` inline · `{grid}` · `{comment}`
 
-- Usa **`{grid: ...}`** para cualquier línea con **acordes que deban transponerse** (la rueda
-  al principio de una sección, la intro, un interludio…). Escribe los acordes en **grados**;
-  puedes intercalar etiquetas y separadores (`·`, `/`, `x2`, `estrofa:`…) y se conservan tal
-  cual. Ejemplo:
+Tres formas de mostrar acordes, cada una con su papel. **La regla por defecto es inline sobre
+la letra** (como en lacuerda.net); `{grid}` y `{comment}` son casos concretos.
+
+- **`[grado]` inline (partes cantadas)** — es lo **normal**: pon el acorde en grados justo
+  delante de la sílaba del cambio (incluso a mitad de palabra), encima de la letra. Si una
+  sección repite el **mismo ciclo** de acordes línea a línea, pon los acordes **solo en la
+  primera vuelta** del ciclo y deja el resto de la sección limpio. Si un verso concreto tiene
+  una **variación**, pon ese acorde inline solo ahí.
 
   ```
-  {grid: Tono: I · estrofa: V·I·ii·IV · estribillo: I·vi·ii·V}
   {start_of_verse: Estrofa 1}
-  {grid: V · I · ii · IV}
+  [I]¿Dónde estabas en[V]tonces
+  cuando tanto te nece[V]sité?
   ```
 
-- Usa **`{comment: ...}`** solo para **prosa** (aclaraciones, «se repite 2 veces», letras
-  alternativas…). Su texto sale **verbatim** y **no** se transpone, así que **no metas
-  acordes que dependan del tono** ahí dentro (saldrían mal en el bajo). Si necesitas mostrar
-  acordes, ponlos como grados en un `{grid}`.
+- **`{grid: ...}`** para **secciones instrumentales** (intro, punteo, solo, interludio **sin
+  letra**) o cuando quieras rotular la rueda de una parte instrumental. Escribe los acordes en
+  **grados**; puedes intercalar etiquetas y separadores (`·`, `/`, `x2`, `estrofa:`…) y se
+  conservan tal cual. El `{grid}` **sí se transpone** al tono real en el bajo.
+
+  ```
+  {grid: Intro: i · bVII · bVI · V  (punteo)}
+  ```
+
+- **`{comment: ...}`** solo para **prosa** (recitados, «2ª vez cambia el final…», «mismas
+  letras que la Estrofa 1»…). Su texto sale **verbatim** y **no** se transpone, así que **no
+  metas acordes que dependan del tono** ahí dentro (saldrían mal en el bajo). Si necesitas
+  mostrar acordes, ponlos inline o como grados en un `{grid}`.
 
 ### Modulación (`{x_degkey}`)
 
@@ -131,15 +144,16 @@ adelante. Ejemplo (Insurrección, sube de La a Si tras el primer puente):
 
 ```
 {start_of_chorus: Puente  [La]}
-{grid: V · IV · V · IV · I}
-...
+[V]Me siento hoy como un hal[IV]cón
+he[V]rido por las flechas de la
+[I]incertidumbre.
 {end_of_chorus}
 
 {x_degkey: +2}
 {comment: Sube un tono: La a Si}
 
-{start_of_verse: Estrofa 1  [Si]}
-{grid: I · IV · V}
+{start_of_verse: Estrofa 2  [Si]}
+[I]Me corto el pelo [IV]una y otra [I]vez.
 ...
 ```
 
@@ -151,8 +165,12 @@ adelante. Ejemplo (Insurrección, sube de La a Si tras el primer puente):
   quepa en **una sola hoja** (para verla entera en la tablet sin scroll). Si una se va a dos
   páginas, añade `{columns: 2}` tras la cabecera.
 - **Letra junta**: no dejes líneas en blanco entre versos de una misma sección.
-- **No repitas acordes en cada verso**: si una sección sigue una rueda clara, deja la letra
-  limpia y pon la progresión en un `{grid}` al principio de la sección.
+- **Acordes encima de la letra (inline)**: en las partes cantadas, los acordes van inline
+  `[grado]` justo delante de la sílaba del cambio (estilo lacuerda). **No repitas los acordes
+  en cada vuelta**: si una sección repite el mismo ciclo, ponlos solo en la **primera línea**
+  del ciclo; y si otra sección (p. ej. Estrofa 2) usa la **misma rueda** que una anterior,
+  déjala **limpia** (sin acordes) — el label de la sección basta. Reserva `{grid}` para las
+  secciones **instrumentales** (sin letra).
 - **No repitas el estribillo**: escríbelo una vez con `{start_of_chorus}` y reutilízalo con
   `{chorus}`.
 - **Solo ASCII en líneas que se renderizan**: en `{comment}`, `{subtitle}`, `{grid}` y demás
@@ -188,12 +206,16 @@ Partiendo de una canción con `{key: Lam}` + `{capo: 3}` (forma Lam, suena en Do
 {key: Lam}
 {capo: 0}
 
-{grid: estrofa: i · bVII · bVI · V}
+{grid: Intro: i · bVII · bVI · V}
 
 {start_of_verse: Estrofa 1}
-{grid: i · bVII · bVI · V}
 [i]Primera línea con su a[bVII]corde
 [bVI]segunda línea y su cam[V]bio
+{end_of_verse}
+
+{start_of_verse: Estrofa 2}
+Misma rueda, letra limpia sin acordes
+porque repite el ciclo de la Estrofa 1
 {end_of_verse}
 
 {start_of_chorus: Estribillo}

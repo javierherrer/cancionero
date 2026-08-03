@@ -9,9 +9,8 @@
 {key: Lam}
 {capo: 3}
 
-{grid: cadencia andaluza: i · bVII · bVI · V · estrofa sobre: V · bVI · bVII · bIII}
-
-{grid: Intro: punteo sobre i · bVII · bVI · V}
+{comment: Intro (punteo)}
+{grid: i · bVII · bVI · V}
 
 {start_of_verse: Estrofa 1}
 [V]Una vez soñé lo que el futuro me de[bVI]paraba,

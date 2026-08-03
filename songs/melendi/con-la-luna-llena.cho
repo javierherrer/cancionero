@@ -9,8 +9,6 @@
 {key: Do}
 {capo: 0}
 
-{grid: Tono: I · estrofa: vi7·IV·V·III7 · estribillo: I·V·IV·III7}
-
 {grid: Intro: I · iv6 · V · IV · III7sus4 · III7}
 
 {start_of_verse: Estrofa 1}
@@ -41,7 +39,8 @@ morirme a tu [III7]vera.
 
 {chorus}
 
-{comment: Solo de guitarra: Do · Sol · Fa · Mi7}
+{comment: Solo de guitarra}
+{grid: I · V · IV · III7}
 
 {start_of_verse: Puente}
 Qui[IV]siera ser tu a[V]muleto y veneno en tu [vi7]aire. Qui[IV]siera ser
