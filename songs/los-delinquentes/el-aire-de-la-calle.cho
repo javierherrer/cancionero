@@ -46,11 +46,16 @@ Solo quiero cuarenta pavos para dormirme en una cama.
 No quiero amores, soy vagabundo y amante de la noche.
 {end_of_verse}
 
-{chorus}
+{start_of_chorus: Estribillo (2ª vez)}
+{grid: i · v · iv · v}
+Y el aire de la calle a mí me huele a goma fresca,
+yo lo asumo me lo fumo y me escapo por la cuesta.
+Que pena, mira qué pena, que mi mechero no tiene piedra,
+quién pudiera, quién pudiera, quitar olores en la arena.
+{end_of_chorus}
 
-{comment: 2ª vez el estribillo cambia el final: «…que mi mechero no tiene piedra / quién pudiera quitar olores en la arena»}
-
-{start_of_verse: Cierre (Lam·Mim·Rem·Mim) ×4}
+{start_of_verse: Cierre}
+{comment: Lam · Mim · Rem · Mim}
 Veneno negro yo tengo en la sangre,
 en mis brazos tengo cinco tatuajes.
 Yo nunca lloro porque vivo en carnavales,
