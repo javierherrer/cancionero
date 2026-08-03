@@ -63,10 +63,11 @@ Salida: `dist\{guitarra,bajo}\<artista>\<cancion>.pdf` y
    Traduce el tono pedido: "LAm +3" -> `{key: Lam}` `{capo: 3}`. Deja 1-2 lineas `#` con la
    URL de origen (fuente de lacuerda).
 3. Escribe la letra **junta** con los acordes en **grados** inline `[grado]` delante de la
-   silaba del cambio (encima de la letra, estilo lacuerda; incluso a mitad de palabra). Si una
-   seccion repite el **mismo ciclo** de acordes, ponlos **solo en la primera vuelta** y deja el
-   resto limpio; si otra seccion usa la **misma rueda** que una anterior, dejala limpia. Usa
-   `{grid: ...}` **solo para secciones instrumentales** (intro/solo sin letra); ver Reglas.
+   silaba del cambio (encima de la letra, estilo lacuerda; incluso a mitad de palabra). **Cada
+   verso cantado lleva sus acordes**, aunque repita la rueda de una seccion anterior (asi es
+   comodo tocar y cantar a la vez). El estribillo se escribe una vez (`{start_of_chorus}`) y se
+   reutiliza con `{chorus}` (se reimprime con sus acordes). Usa `{grid: ...}` **solo para
+   secciones instrumentales** (intro/solo sin letra); ver Reglas.
 4. `python scripts\render.py` y compila la cancion (flujo anterior).
 5. **Verifica 1 pagina** (ver Verificacion). Si se va a 2, anade `{columns: 2}` tras la
    cabecera o compacta con `{grid}`.
@@ -83,11 +84,10 @@ final). El indice impreso y los marcadores del PDF usan ese orden via `songindex
 ## Flujo: editar tono, cejilla o simplificar
 - **Cambiar tono/cejilla**: edita solo `{key}` y/o `{capo}`; ambos releases se regeneran
   coherentes. (Subir una cancion "a DO" = ajustar `{key}`/`{capo}` para que el tono real sea Do.)
-- **Simplificar seccion repetitiva (parte cantada)**: no repitas los acordes en cada vuelta.
-  Deja los acordes inline `[grado]` **solo en la primera linea** del ciclo y limpia el resto; si
-  otra seccion repite la **misma rueda**, dejala **limpia** entera (el label basta). Si una
-  seccion es casi constante pero tiene **un acorde distinto**, conserva **solo** ese acorde
-  desviado inline en su verso (ejemplo real: outro de *el-secreto-de-las-tortugas* con `[#I]`).
+- **Parte cantada**: cada verso lleva sus acordes inline `[grado]`, aunque repita la rueda de
+  una seccion anterior (comodo para tocar y cantar a la vez). Solo si una cancion **no cabe en
+  una pagina**, compacta con `{columns: 2}`; y como ultimo recurso puedes resumir una seccion
+  muy repetitiva con `{grid: <rueda>}` (deja entonces la letra de esa seccion limpia).
 - **Seccion instrumental** (intro/solo/interludio sin letra): usa `{grid: <rueda en grados>}`
   (se transpone al tono real del bajo); nunca notas sueltas en `{comment}`.
 - **Modulacion** (cambia de tono a mitad): a partir del cambio sigue escribiendo grados
@@ -115,9 +115,9 @@ gh release view v1.0 --json name,assets --jq '{name:.name, assets:[.assets[].nam
   usa `{columns: 2}` o simplifica con `{grid}`.
 - **Letra junta**: sin lineas en blanco entre versos de una misma seccion.
 - **Acordes encima de la letra**: en partes cantadas, inline `[grado]` sobre la silaba (estilo
-  lacuerda). **No repitas acordes en cada verso** ni **el estribillo** (`{start_of_chorus}` una
-  vez + `{chorus}` para repetir): pon los acordes solo en la 1a vuelta del ciclo y deja limpias
-  las secciones que repiten la misma rueda.
+  lacuerda). **Cada verso cantado lleva sus acordes**, aunque repita la rueda de otra seccion
+  (comodo para tocar y cantar a la vez). **El estribillo** se escribe una vez
+  (`{start_of_chorus}`) y se repite con `{chorus}` (se reimprime con sus acordes).
 - **`[grado]` inline en lo cantado; `{grid}` para acordes instrumentales que se transponen;
   `{comment}` solo para prosa**. No metas acordes dependientes del tono en un `{comment}`:
   saldrian mal en el bajo.

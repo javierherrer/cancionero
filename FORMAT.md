@@ -105,15 +105,14 @@ Tres formas de mostrar acordes, cada una con su papel. **La regla por defecto es
 la letra** (como en lacuerda.net); `{grid}` y `{comment}` son casos concretos.
 
 - **`[grado]` inline (partes cantadas)** — es lo **normal**: pon el acorde en grados justo
-  delante de la sílaba del cambio (incluso a mitad de palabra), encima de la letra. Si una
-  sección repite el **mismo ciclo** de acordes línea a línea, pon los acordes **solo en la
-  primera vuelta** del ciclo y deja el resto de la sección limpio. Si un verso concreto tiene
-  una **variación**, pon ese acorde inline solo ahí.
+  delante de la sílaba del cambio (incluso a mitad de palabra), encima de la letra. **Cada verso
+  cantado lleva sus acordes**, aunque repita el mismo ciclo que otro verso o sección: es lo
+  cómodo para tocar y cantar a la vez.
 
   ```
   {start_of_verse: Estrofa 1}
   [I]¿Dónde estabas en[V]tonces
-  cuando tanto te nece[V]sité?
+  [vi]cuando tanto te nece[V]sité?
   ```
 
 - **`{grid: ...}`** para **secciones instrumentales** (intro, punteo, solo, interludio **sin
@@ -166,11 +165,11 @@ he[V]rido por las flechas de la
   páginas, añade `{columns: 2}` tras la cabecera.
 - **Letra junta**: no dejes líneas en blanco entre versos de una misma sección.
 - **Acordes encima de la letra (inline)**: en las partes cantadas, los acordes van inline
-  `[grado]` justo delante de la sílaba del cambio (estilo lacuerda). **No repitas los acordes
-  en cada vuelta**: si una sección repite el mismo ciclo, ponlos solo en la **primera línea**
-  del ciclo; y si otra sección (p. ej. Estrofa 2) usa la **misma rueda** que una anterior,
-  déjala **limpia** (sin acordes) — el label de la sección basta. Reserva `{grid}` para las
-  secciones **instrumentales** (sin letra).
+  `[grado]` justo delante de la sílaba del cambio (estilo lacuerda). **Cada verso cantado lleva
+  sus acordes**, aunque repita el mismo ciclo que una sección anterior (p. ej. Estrofa 2 con la
+  misma rueda que Estrofa 1): así es cómodo tocar y cantar a la vez. Reserva `{grid}` para las
+  secciones **instrumentales** (sin letra). Si al cifrarlo todo una canción se va a dos páginas,
+  compáctala con `{columns: 2}`.
 - **No repitas el estribillo**: escríbelo una vez con `{start_of_chorus}` y reutilízalo con
   `{chorus}`.
 - **Solo ASCII en líneas que se renderizan**: en `{comment}`, `{subtitle}`, `{grid}` y demás
@@ -214,8 +213,8 @@ Partiendo de una canción con `{key: Lam}` + `{capo: 3}` (forma Lam, suena en Do
 {end_of_verse}
 
 {start_of_verse: Estrofa 2}
-Misma rueda, letra limpia sin acordes
-porque repite el ciclo de la Estrofa 1
+[i]Misma rueda, pero re[bVII]pito los a[bVI]cordes en cada [V]verso
+[i]para tocar y can[bVII]tar a la [bVI]vez más có[V]modo
 {end_of_verse}
 
 {start_of_chorus: Estribillo}
