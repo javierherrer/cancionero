@@ -84,10 +84,13 @@ final). El indice impreso y los marcadores del PDF usan ese orden via `songindex
 ## Flujo: editar tono, cejilla o simplificar
 - **Cambiar tono/cejilla**: edita solo `{key}` y/o `{capo}`; ambos releases se regeneran
   coherentes. (Subir una cancion "a DO" = ajustar `{key}`/`{capo}` para que el tono real sea Do.)
-- **Parte cantada**: cada verso lleva sus acordes inline `[grado]`, aunque repita la rueda de
-  una seccion anterior (comodo para tocar y cantar a la vez). Solo si una cancion **no cabe en
-  una pagina**, compacta con `{columns: 2}`; y como ultimo recurso puedes resumir una seccion
-  muy repetitiva con `{grid: <rueda>}` (deja entonces la letra de esa seccion limpia).
+- **Parte cantada**: muestra la rueda **una vez, en la 1a vuelta al principio de cada seccion**,
+  y deja **limpio** el resto de la seccion si repite el mismo ciclo; **vuelvela a poner al inicio
+  de cada seccion nueva** (la Estrofa 2 la lleva otra vez aunque coincida con la Estrofa 1: es
+  mas comodo cantar y tocar a la vez). **Conserva las variaciones** inline en su verso. Si la
+  seccion no repite ciclo (through-composed), cifra cada verso. Solo si una cancion **no cabe en
+  una pagina**, compacta con `{columns: 2}`; y como ultimo recurso resume una seccion muy
+  repetitiva con `{grid: <rueda>}` (deja entonces la letra de esa seccion limpia).
 - **Seccion instrumental** (intro/solo/interludio sin letra): usa `{grid: <rueda en grados>}`
   (se transpone al tono real del bajo); nunca notas sueltas en `{comment}`.
 - **Modulacion** (cambia de tono a mitad): a partir del cambio sigue escribiendo grados
@@ -115,9 +118,11 @@ gh release view v1.0 --json name,assets --jq '{name:.name, assets:[.assets[].nam
   usa `{columns: 2}` o simplifica con `{grid}`.
 - **Letra junta**: sin lineas en blanco entre versos de una misma seccion.
 - **Acordes encima de la letra**: en partes cantadas, inline `[grado]` sobre la silaba (estilo
-  lacuerda). **Cada verso cantado lleva sus acordes**, aunque repita la rueda de otra seccion
-  (comodo para tocar y cantar a la vez). **El estribillo** se escribe una vez
-  (`{start_of_chorus}`) y se repite con `{chorus}` (se reimprime con sus acordes).
+  lacuerda). **Muestra la rueda una vez, en la 1a vuelta al principio de cada seccion**, y deja
+  limpio el resto de la seccion si repite el mismo ciclo; **repitela al inicio de cada seccion
+  nueva** (Estrofa 2 la lleva otra vez aunque coincida con Estrofa 1). **Conserva las variaciones**
+  inline. Si la seccion no repite ciclo (through-composed), cifra cada verso. **El estribillo** se
+  escribe una vez (`{start_of_chorus}`) y se repite con `{chorus}` (se reimprime con sus acordes).
 - **`[grado]` inline en lo cantado; `{grid}` para acordes instrumentales que se transponen;
   `{comment}` solo para prosa**. No metas acordes dependientes del tono en un `{comment}`:
   saldrian mal en el bajo.

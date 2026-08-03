@@ -105,15 +105,23 @@ Tres formas de mostrar acordes, cada una con su papel. **La regla por defecto es
 la letra** (como en lacuerda.net); `{grid}` y `{comment}` son casos concretos.
 
 - **`[grado]` inline (partes cantadas)** — es lo **normal**: pon el acorde en grados justo
-  delante de la sílaba del cambio (incluso a mitad de palabra), encima de la letra. **Cada verso
-  cantado lleva sus acordes**, aunque repita el mismo ciclo que otro verso o sección: es lo
-  cómodo para tocar y cantar a la vez.
+  delante de la sílaba del cambio (incluso a mitad de palabra), encima de la letra. **Muestra la
+  rueda una sola vez, en la 1ª vuelta al principio de cada sección**, y deja **limpio** (sin
+  acordes) el resto de esa sección cuando repite el mismo ciclo con el mismo fraseo. La rueda
+  **se vuelve a poner al inicio de cada sección nueva** (la Estrofa 2 la lleva otra vez aunque
+  coincida con la Estrofa 1: es más cómodo de cantar y tocar a la vez). **Conserva siempre las
+  variaciones** que se salgan de la rueda: pon ese acorde distinto inline justo en su verso.
 
   ```
   {start_of_verse: Estrofa 1}
-  [I]¿Dónde estabas en[V]tonces
-  [vi]cuando tanto te nece[V]sité?
+  [i]Se enamoró la mo[bVII]rita
+  [bVI]de un soldado le[V]gionario
+  y en las noches de Melilla     <- limpio: repite la misma rueda
+  se lo llevaba al santuario.
   ```
+
+  Si una sección no repite ningún ciclo (está *through-composed*, con fraseo irregular), cifra
+  cada verso con normalidad: no hay «vueltas» que aligerar.
 
 - **`{grid: ...}`** para **secciones instrumentales** (intro, punteo, solo, interludio **sin
   letra**) o cuando quieras rotular la rueda de una parte instrumental. Escribe los acordes en
@@ -165,11 +173,13 @@ he[V]rido por las flechas de la
   páginas, añade `{columns: 2}` tras la cabecera.
 - **Letra junta**: no dejes líneas en blanco entre versos de una misma sección.
 - **Acordes encima de la letra (inline)**: en las partes cantadas, los acordes van inline
-  `[grado]` justo delante de la sílaba del cambio (estilo lacuerda). **Cada verso cantado lleva
-  sus acordes**, aunque repita el mismo ciclo que una sección anterior (p. ej. Estrofa 2 con la
-  misma rueda que Estrofa 1): así es cómodo tocar y cantar a la vez. Reserva `{grid}` para las
-  secciones **instrumentales** (sin letra). Si al cifrarlo todo una canción se va a dos páginas,
-  compáctala con `{columns: 2}`.
+  `[grado]` justo delante de la sílaba del cambio (estilo lacuerda). **Muestra la rueda una vez,
+  en la 1ª vuelta al principio de cada sección**, y deja **limpio** el resto de la sección si
+  repite el mismo ciclo; **vuelve a ponerla al inicio de cada sección nueva** (Estrofa 2 la lleva
+  otra vez aunque coincida con Estrofa 1). **Conserva las variaciones** inline en su verso. Si una
+  sección no repite ningún ciclo (*through-composed*), cifra cada verso con normalidad. Reserva
+  `{grid}` para las secciones **instrumentales** (sin letra). Si aun así una canción se va a dos
+  páginas, compáctala con `{columns: 2}`.
 - **No repitas el estribillo**: escríbelo una vez con `{start_of_chorus}` y reutilízalo con
   `{chorus}`.
 - **Solo ASCII en líneas que se renderizan**: en `{comment}`, `{subtitle}`, `{grid}` y demás

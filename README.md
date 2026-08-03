@@ -10,9 +10,9 @@ generan **dos releases** de cada canción:
 - 🎵 **Bajo** — acordes **transpuestos al tono real** (sin cejilla), sin diagramas ni tabs.
 
 - **Origen en texto** ([ChordPro](https://www.chordpro.org/)) → diffs limpios, control de versiones real.
-- **Letra junta** y **estructura marcada** (Intro, Estrofa, Estribillo, Punteo…). Cada verso
-  cantado lleva sus acordes encima (cómodo para tocar y cantar a la vez); el estribillo se
-  escribe una vez y se reutiliza sin reescribirlo.
+- **Letra junta** y **estructura marcada** (Intro, Estrofa, Estribillo, Punteo…). La rueda de
+  acordes se muestra una vez al principio de cada sección (y se repite al empezar cada sección
+  nueva); el estribillo se escribe una vez y se reutiliza sin reescribirlo.
 - **Notación española** (Do · Re · Mi · Fa · Sol · La · Si).
 - **Una página por canción** — pensado para leerlo entero en la tablet sin scroll.
 - **PDF** con acordes en azul, barra lateral en el estribillo y etiquetas de sección.
