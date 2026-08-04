@@ -1,8 +1,7 @@
 # Fuente: https://acordes.lacuerda.net/ultimo/insurreccion.shtml
 # Version de lacuerda: "El Ultimo de la Fila", version principal.
 # Original en Sol; transportada +2 a La (La mayor) para tocar en el tono pedido.
-# Modula un tono arriba (La -> Si) despues del primer puente; repite toda la cancion en Si.
-# Fuente cananica en grados: la 2a mitad usa {x_degkey: +2} (misma rueda un tono mas alta).
+# Toda la cancion en La (sin modular).
 # Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
 
 {title: Insurrección}
@@ -11,44 +10,37 @@
 {key: La}
 {capo: 0}
 
-{comment: Tono inicial La; modula a Si (un tono arriba) tras el primer puente}
-
 {grid: Intro: punteo sobre I · IV (x2)}
 
-{start_of_verse: Estrofa 1  [La]}
+{start_of_verse: Estrofa 1}
 [I]¿Dónde estabas [IV]entonces
-cuando [I]tanto te [IV]necesité?
-[I]Nadie es mejor que [IV]nadie,
-pero [iii]tú creíste [IV]vencer.
-[I]Si lloré ante tu [IV]puerta
+cuando tanto te necesité?
+Nadie es mejor que nadie,
+pero [iii]tú creíste vencer.
+Si lloré ante tu puerta
 de nada [iii]sirvió. [V]
-Barras de [I]bar [IV]vertederos de [I]amor,
-os [I]enseñé mi [IV]trocito [V]peor.
-Retales de mi [I]vida,
-[IV]fotos a [I]contraluz.
+Barras de bar vertederos de amor,
+os enseñé mi trocito [V]peor.
+Retales de mi vida,
+fotos a contraluz.
 {end_of_verse}
 
-{start_of_chorus: Puente  [La]}
+{start_of_chorus: Puente}
 [V]Me siento [IV]hoy como un [V]halcón
 herido [IV]por las flechas de la
 [I]incertidumbre.
 {end_of_chorus}
 
-{x_degkey: +2}
-{comment: Sube un tono: La a Si}
-
-{comment: Estrofa 1 [Si]: mismas letras y rueda que la Estrofa 1}
-
-{start_of_verse: Estrofa 2  [Si]}
-[I]Me corto el [IV]pelo una y [I]otra vez.
-[I]Me quiero [iii]defender.
-Dame mi [I]alma y [IV]déjame en [I]paz.
-Quiero [I]intentar no [IV]volver a [iii]caer.
-Pequeñas [I]tretas
-[IV]para [I]continuar en la [IV]brecha.
+{start_of_verse: Estrofa 2}
+[I]Me corto el [IV]pelo una y otra vez.
+Me quiero [iii]defender.
+Dame mi alma y déjame en paz.
+Quiero intentar no volver a [iii]caer.
+Pequeñas tretas
+para continuar en la brecha.
 {end_of_verse}
 
-{start_of_chorus: Puente final  [Si]}
+{start_of_chorus: Puente final}
 [V]Me siento [IV]hoy como un [V]halcón
 llamado [IV]a las filas de la
 [I]insurrección.
