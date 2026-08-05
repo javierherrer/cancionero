@@ -1,48 +1,50 @@
-# Fuente: https://acordes.lacuerda.net/musica_de_tuna/si_vas_a_calatayud.shtml
-# Copla popular (La Dolores). Subida a Do por petición del usuario.
-# Se toca sin cejilla, alternando el color mayor/menor de la copla.
+# Fuente: https://www.tunaespana.es/?p=3877 (Tuna España - Don Dudo)
+# Copla popular "La Dolores" (S. Valverde / R. Zarzoso).
+# Tono La (forma) con cejilla en el 3er traste; alterna color mayor/menor.
 # Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
 
 {title: Si vas a Calatayud}
 {subtitle: Copla popular - La Dolores}
 {artist: Salvador Valverde}
-{key: Do}
-{capo: 0}
+{key: La}
+{capo: 3}
 
-{comment: Vals-copla}
+{comment: Pasodoble}
 
 {start_of_verse: Estrofa 1}
-[I]Porque era amiga de hacer fa[V7]vores,
-porque fue alegre su ju[I]ventud.
-[i]En coplas se [biii°]vió la Do[V7]lores, la flor de Cala[i]tayud.
-Una jo[bVII7]tica recorrió Es[bIII]paña,
-pregón de in[bVII7]famia de una mu[bIII]jer,
-y el buen [V7]nombre de aquella [i]maña,
-[bVI]yo tengo que de[V]fender.
+[I]Por que era amiga de hacer fa[V7]vores,
+[I]porque fue alegre en su juventud,
+[i]en coplas se vió la Do[V7]lores, [i]la flor de Calatayud.
+[bVII7]Y una coplilla recorrió Es[bIII]paña,
+[bVI]pregón de infamia de una mu[V]jer.
+[V7]Pero el buen nombre de aquella [i]maña,
+[iv]yo tengo [bVI]que de[V]fender.
 {end_of_verse}
 
 {comment: (recitado) "La Dolores de la copla, me dijo un día mi padre, fue alegre, pero fue buena; fue mi mujer, fue tu madre."}
 
 {start_of_chorus: Estribillo}
-[V7]Si vas a Cala[I]yud, si vas a Cala[V7]yud,
-pregunta por la Do[I]lores, una copla la ma[V7]tó
-de vergüenza y sin sa[I]bores.
-Ve que te lo [V7]digo yo: el hijo de la Do[I]lores.
+[V7]Si vas a Cala[I]tayud, si vas a Cala[V7]tayud,
+[I]pregunta por la Dolores,
+[V7]que una copla la mató, [I]de vergüenza y sin sabores.
+[V7]Di que te lo digo yo: [I]el hijo de la Dolores.
 {end_of_chorus}
 
 {start_of_verse: Estrofa 2}
-[I]Dicen los mozos de la ri[V7]bera,
-que por la calle la ven pa[I]sar.
-[i]No sabe su [biii°]madre quién [V7]era, Dolores la del can[i]tar.
-[bVII7]Él la quería con amor [bIII]bueno, y a su ca[bVII7]riño él defen[bIII]dió,
-mas no [V7]quiso matar al [i]hombre, que la mal[bVI]dad le arro[V]jó.
+[I]Dice la gente de mala len[V7]gua,
+[I]que por tu calle me ven rondar:
+[i]¿Tú sabes su madre quién [V7]era? [i]Dolores la del cantar.
+[bVII7]Yo la quería con amor [bIII]bueno,
+[bVI]mas la calumnia la avergon[V]zó.
+[V7]Y no supo limpiarse el [i]cieno,
+[iv]que la mal[bVI]dad le arro[V]jó.
 {end_of_verse}
 
 {comment: (recitado) "Copla que vas dando muerte, con el alma te maldigo; fuiste dolor de mi madre, pero no podrás conmigo."}
 
 {start_of_chorus: Estribillo final}
-[V7]Si vas a Cala[I]yud, si vas a Cala[V7]yud,
-pregunta por la Do[I]lores, y en ofrenda de su a[V7]mor,
-en su tumba ponle [I]flores.
-Ve que te lo [V7]digo yo: el hijo de la Do[I]lores.
+[V7]Si vas a Cala[I]tayud, si vas a Cala[V7]tayud,
+[I]pregunta por la Dolores,
+[V7]y en ofrenda de mi amor, [I]en su tumba ponle flores.
+[V7]Ve que te lo pido yo: [I]el hijo de la Dolores.
 {end_of_chorus}
