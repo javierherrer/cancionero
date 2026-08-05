@@ -8,19 +8,19 @@
 {subtitle: El Último de la Fila}
 {artist: El Último de la Fila}
 {key: La}
-{capo: 0}
+{capo: 3}
 
 {grid: Intro: punteo sobre I · IV (x2)}
 
 {start_of_verse: Estrofa 1}
 [I]¿Dónde estabas [IV]entonces
-cuando tanto te necesité?
-Nadie es mejor que nadie,
-pero [iii]tú creíste vencer.
-Si lloré ante tu puerta
+cuando [I]tanto te necesi[IV]té?
+[I]Nadie es mejor que [IV]nadie,
+pero [iii]tú creíste ven[IV]cer.
+[I]Si lloré ante tu [IV]puerta
 de nada [iii]sirvió. [V]
 Barras de bar vertederos de amor,
-os enseñé mi trocito [V]peor.
+os enseñé mi trocito peor.
 Retales de mi vida,
 fotos a contraluz.
 {end_of_verse}
@@ -32,10 +32,10 @@ herido [IV]por las flechas de la
 {end_of_chorus}
 
 {start_of_verse: Estrofa 2}
-[I]Me corto el [IV]pelo una y otra vez.
-Me quiero [iii]defender.
+[I]Me corto el [IV]pelo una y [I]otra vez.
+Me quiero [iii]defender[V].
 Dame mi alma y déjame en paz.
-Quiero intentar no volver a [iii]caer.
+Quiero intentar no volver a caer.
 Pequeñas tretas
 para continuar en la brecha.
 {end_of_verse}

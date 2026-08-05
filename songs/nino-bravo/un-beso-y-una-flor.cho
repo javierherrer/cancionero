@@ -13,16 +13,16 @@
 {grid: IV · I · V · vi · V}
 
 {start_of_verse: Estrofa 1}
-[I]Dejaré mi tierra por ti,
-[vi]dejaré mis campos y me iré... lejos de aquí.
-[V]Cruzaré llo[I]rando el Jardín
-[vi]y con tus recuerdos partiré... lejos de aquí.
+[V][I]Dejaré mi tierra por ti,
+[V][I]dejaré mis campos y me [vi]iré... lejos de aquí.
+Cruzaré llorando el Jardín
+y con tus recuerdos partiré... lejos de aquí.
 {end_of_verse}
 
 {start_of_bridge: Puente}
-[IV]De día vi[I]viré
+De [IV]día viviré
 [iii]pensando en tu son[vi]risa,
-[IV]de noche las es[iii]trellas me acompaña[vi]rán.
+[IV]de noche las estrellas me acom[iii]paña[vi]rán.
 Serás como una luz
 que alumbre en mi camino,
 [IV]me voy pero te [I]juro
@@ -43,15 +43,15 @@ las [I]penas pesan [IV]en el co[V]razón.
 {end_of_chorus}
 
 {start_of_verse: Estrofa 2}
-[I]Buscaré un hogar para ti,
-[vi]donde el cielo se une con el mar, lejos de aquí.
-[V]Con mis manos y con tu a[I]mor
-[vi]lograré encontrar otra ilusión, lejos de aquí.
+[V][I]Buscaré un hogar para ti,
+[V][I]donde el cielo se une con el [vi]mar, lejos de aquí.
+Con mis manos y con tu amor
+lograré encontrar otra ilusión, lejos de aquí.
 {end_of_verse}
 
 {start_of_bridge: Puente}
-[IV]De día vi[I]viré [iii]pensando en tu son[vi]risa,
-[IV]de noche las es[iii]trellas me acompaña[vi]rán.
+De [IV]día viviré [iii]pensando en tu son[vi]risa,
+[IV]de noche las estrellas me acom[iii]paña[vi]rán.
 Serás como una luz que alumbre en mi camino,
 [IV]me voy pero te [I]juro [V]que mañana volveré.
 {end_of_bridge}

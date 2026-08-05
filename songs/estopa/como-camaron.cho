@@ -9,6 +9,8 @@
 {key: Lam}
 {capo: 3}
 
+{define: Lam base-fret 5 frets 0 0 3 1 0 0}
+
 {start_of_verse: Estrofa 1}
 [i]Superior a mí
 es la fuerza que me lleva en el pulso que mantengo,
