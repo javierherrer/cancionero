@@ -14,13 +14,13 @@
 
 {start_of_verse: Estrofa 1}
 [I]¿Dónde estabas [IV]entonces
-cuando [I]tanto te necesi[IV]té?
-[I]Nadie es mejor que [IV]nadie,
+cuando tanto te necesité?
+Nadie es mejor que nadie,
 pero [iii]tú creíste ven[IV]cer.
-[I]Si lloré ante tu [IV]puerta
+Si lloré ante tu puerta
 de nada [iii]sirvió. [V]
 Barras de bar vertederos de amor,
-os enseñé mi trocito peor.
+os enseñé mi tro[iii]cito pe[V]or.
 Retales de mi vida,
 fotos a contraluz.
 {end_of_verse}
@@ -28,8 +28,10 @@ fotos a contraluz.
 {start_of_chorus: Puente}
 [V]Me siento [IV]hoy como un [V]halcón
 herido [IV]por las flechas de la
-[I]incertidumbre.
+[I]incertidumbre.[IV]
 {end_of_chorus}
+
+{grid: punteo sobre I · IV (x2)}
 
 {start_of_verse: Estrofa 2}
 [I]Me corto el [IV]pelo una y [I]otra vez.
@@ -43,5 +45,5 @@ para continuar en la brecha.
 {start_of_chorus: Puente final}
 [V]Me siento [IV]hoy como un [V]halcón
 llamado [IV]a las filas de la
-[I]insurrección.
+[I]insurrección.[IV]
 {end_of_chorus}

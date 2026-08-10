@@ -9,7 +9,7 @@
 {key: La}
 {capo: 5}
 
-{comment: Pasodoble}
+{grid: Intro: I · V7}
 
 {start_of_verse: Estrofa 1}
 [I]Por que era amiga de hacer fa[V7]vores,
@@ -21,7 +21,12 @@ Pero el buen nombre[V7] de aquella maña[i],
 [iv]yo tengo [bVI]que defen[V]der.
 {end_of_verse}
 
-{comment: (recitado) "La Dolores de la copla, me dijo un día mi padre, fue alegre, pero fue buena; fue mi mujer, fue tu madre."}
+{start_of_verse: Estrofa 1}
+La Dolores de la copla,
+me dijo un día mi padre,
+fue alegre, pero fue buena;
+fue mi mujer, fue tu madre.
+{end_of_verse}
 
 {start_of_chorus: Estribillo}
 [V7]Si vas a Cala[I]tayud, si vas a Cala[V7]tayud,
