@@ -15,7 +15,7 @@
 Empiezo a que[I]rerte,
 empiezo a pen[ii]sar que no hay un [IV]día,
 que no quiera [V]verte,
-[I]y demos[ii]trar todo el a[IV]mor que te me[V]reces.
+y demostrar todo el amor que te mereces.
 Y vestiré como tú digas, iré más decente.
 Para poder ir a esos sitios deprimentes.
 Haré de escoba y de felpudo, haré de sirviente.
@@ -23,17 +23,19 @@ Y triturarme el corazón con ingredientes.
 {end_of_verse}
 
 {start_of_chorus: Estribillo}
-[I]Y beber todo ese batido,
-[vi]acompañarlo después con vino,
-[ii]beber hasta emborracharme,
-[V]hasta caer rendido y levantarme.
+Y beber todo e[I]se batido,
+acompañarlo des[vi]pués con vino,
+beber hasta emborra[ii]charme,
+hasta ca[V]er rendido y levantarme.
 {end_of_chorus}
+
+{grid: Interludio: V · I · ii · IV}
 
 {start_of_verse: Estrofa 2}
 Me levanté [I]tarde
 y la re[ii]saca que ahora [IV]tengo
 me impide lla[V]marte,
-[I]y con las [ii]ganas que ahora [IV]tengo de fo[V]llarte.
+y con las ganas que ahora tengo de follarte.
 Y me has mandado algún mensaje que vi tarde:
 no va el whatsapp, no carga el vídeo que mandaste.
 {end_of_verse}
@@ -43,11 +45,15 @@ no va el whatsapp, no carga el vídeo que mandaste.
 {start_of_verse: Coda}
 [I]Sigo aún borracho per[vi]dido,
 pero me atrevo a con[ii]tarte
-que yo no [V]quiero ser tu amante.
+que yo no [V]quiero ser tu amigo.
 {end_of_verse}
 
-{comment: 1ª vez la coda dice «…que yo no puedo ser tu amigo»}
+{grid: Interludio: IV · vi · ii · V · IV · iii · ii · I}
 
-{grid: Interludio: IV · vi · ii · V / I · vi · ii · V}
+{chorus}
 
-{comment: Se repiten estribillo y coda hasta cerrar con «y yo no quiero ser tu amante»}
+{start_of_verse: Coda final}
+[I]Sigo aún borracho per[vi]dido, pero me atrevo a con[ii]tarte que yo no [V]quiero ser tu amante. (x3)
+Y no quiero ser tu amante.[I]
+{end_of_verse}
+
