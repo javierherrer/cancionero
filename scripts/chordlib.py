@@ -254,10 +254,10 @@ def _selftest():
 
     # 3) Expansion de grados al tono (color chords transpuestos).
     expect_chord = [
-        # todos-los-besos: guitarra Do vs bajo Mib (+3)
+        # todos-los-besos: con-cejilla Do vs sin-cejilla Mib (+3)
         ('Domaj7', 'Do', 'Domaj7'), ('Imaj7', 'Mib', 'Mibmaj7'),
         ('vi7', 'Mib', 'Dom7'), ('ii7', 'Mib', 'Fam7'),
-        # cadencia andaluza en el tono real del bajo (Dom)
+        # cadencia andaluza en el tono real sin cejilla (Dom)
         ('i', 'Dom', 'Dom'), ('bVII', 'Dom', 'Sib'),
         ('bVI', 'Dom', 'Lab'), ('V', 'Dom', 'Sol'),
     ]
@@ -267,7 +267,7 @@ def _selftest():
         if _norm(got) != _norm(want):
             fails.append((key, deg, 'esperado %s, obtenido %s' % (want, got)))
 
-    # 4) transpose_key (forma + cejilla -> tono real del bajo).
+    # 4) transpose_key (forma + cejilla -> tono real sin cejilla).
     expect_tk = [('Lam', 3, 'Dom'), ('Do', 3, 'Mib'), ('Mi', 0, 'Mi'),
                  ('La', 2, 'Si'), ('Fa', 0, 'Fa'), ('Do', 5, 'Fa')]
     for key, semis, want in expect_tk:

@@ -1,23 +1,25 @@
 # -*- coding: utf-8 -*-
 """
-Genera los dos cancioneros a partir de la fuente canonica en grados:
+Genera los dos cancioneros a partir de la fuente canonica en grados y un setlist:
 
-  - guitarra: acordes en el tono de FORMA (el que se digita con cejilla).
-              Se mantiene {capo: N} y los diagramas.
-  - bajo:     acordes transpuestos al tono REAL (forma + cejilla),
+  - con-cejilla: acordes en el tono de FORMA (el que se digita con cejilla).
+              Se inyecta {capo: N} y los diagramas.
+  - sin-cejilla: acordes transpuestos al tono REAL (forma + cejilla),
               sin cejilla ({capo} eliminado) y sin diagramas.
 
 Fuente (songs/**/*.cho):
-  - {key: <tono de forma>}   {capo: <semitonos de cejilla>}
   - inline  [I] [vi7] [bVII] ...          (grados)
   - ruedas  {grid: ... I · IV · V ...}    (zona maquina: se sustituyen grados)
   - prosa   {comment: ...}                (verbatim)
   - modulacion  {x_degkey: +N}  o  {x_degkey: Si}  (cambia la tonica relativa)
 
-Salida: dist/_build/{guitarra,bajo}/<artista>/<cancion>.cho
+Setlist (setlists/<evento>.json):
+  - entries[].path, entries[].order, entries[].key, entries[].capo
+
+Salida: dist/_build/{con-cejilla,sin-cejilla}/<artista>/<cancion>.cho
 """
 
-import os, re, glob, sys
+import argparse, json, os, re, glob, shutil, sys
 import chordlib as cl
 
 try:
@@ -27,6 +29,7 @@ except Exception:
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SONGS = os.path.join(ROOT, 'songs')
+SETLISTS = os.path.join(ROOT, 'setlists')
 OUT = os.path.join(ROOT, 'dist', '_build')
 
 # Token de grado dentro de una rueda {grid}. El guard parse_degree evita
@@ -77,10 +80,55 @@ def set_reltonic(cur, value):
     return cur if pc is None else pc
 
 
-def render_song(path, target):
-    """target: 'guitarra' | 'bajo'. Devuelve lista de lineas de salida."""
-    lines = open(path, encoding='utf-8').read().splitlines()
+def setlist_path(value):
+    if not value:
+        return None
+    if value.lower().endswith('.json') or os.path.sep in value or '/' in value:
+        path = value
+    else:
+        path = os.path.join(SETLISTS, value + '.json')
+    if not os.path.isabs(path):
+        path = os.path.join(ROOT, path)
+    return os.path.abspath(path)
 
+
+def normalize_song_ref(value):
+    rel = value.replace('\\', '/').strip()
+    if rel.startswith('songs/'):
+        rel = rel[len('songs/'):]
+    return rel
+
+
+def load_setlist(value):
+    path = setlist_path(value)
+    if not path:
+        return None, None
+    with open(path, encoding='utf-8') as fh:
+        data = json.load(fh)
+    entries = data.get('entries')
+    if not isinstance(entries, list):
+        raise ValueError('El setlist no contiene una lista "entries": %s' % path)
+
+    normalized = []
+    for entry in entries:
+        if not isinstance(entry, dict):
+            raise ValueError('Entrada de setlist no valida en %s' % path)
+        rel = normalize_song_ref(entry.get('path', ''))
+        if not rel:
+            raise ValueError('Entrada sin "path" en %s' % path)
+        if 'key' not in entry:
+            raise ValueError('Entrada sin "key" para %s en %s' % (rel, path))
+        normalized.append({
+            'path': rel,
+            'order': int(entry.get('order', len(normalized) + 1)),
+            'key': str(entry['key']).strip(),
+            'capo': int(entry.get('capo', 0)),
+        })
+    normalized.sort(key=lambda e: (e['order'], e['path']))
+    return data, normalized
+
+
+def find_source_key(lines):
     shape_key = None
     capo = 0
     for ln in lines:
@@ -93,12 +141,32 @@ def render_song(path, target):
                 capo = int(m.group(1).strip())
             except ValueError:
                 capo = 0
-    if shape_key is None:
-        raise ValueError('Sin {key} en %s' % path)
+    return shape_key, capo
 
-    if target == 'guitarra':
+
+def emit_key_and_capo(out, target, out_key, capo):
+    out.append('{key: %s}' % out_key)
+    if target == 'con-cejilla':
+        out.append('{capo: %d}' % capo)
+    else:
+        out.append('{diagrams: off}')
+
+
+def render_song(path, target, song_meta=None):
+    """target: 'con-cejilla' | 'sin-cejilla'. Devuelve lista de lineas de salida."""
+    lines = open(path, encoding='utf-8').read().splitlines()
+
+    if song_meta:
+        shape_key = song_meta['key']
+        capo = song_meta['capo']
+    else:
+        shape_key, capo = find_source_key(lines)
+    if shape_key is None:
+        raise ValueError('Sin tono para %s. Usa --setlist o anade {key} legacy.' % path)
+
+    if target == 'con-cejilla':
         out_key = shape_key
-    else:  # bajo: tono real = forma + cejilla
+    else:  # sin-cejilla: tono real = forma + cejilla
         out_key = cl.transpose_key(shape_key, capo)
 
     tonicpc, _is_minor, prefer = cl.parse_key(out_key)
@@ -106,6 +174,7 @@ def render_song(path, target):
 
     out = []
     skip_tab = False
+    emitted_key = False
     for ln in lines:
         # Modulacion: mueve la tonica relativa y no se emite.
         m = _DEGKEY_RE.match(ln)
@@ -116,30 +185,35 @@ def render_song(path, target):
         # {key}
         m = _KEY_RE.match(ln)
         if m:
-            out.append('{key: %s}' % out_key)
+            if not emitted_key:
+                emit_key_and_capo(out, target, out_key, capo)
+                emitted_key = True
             continue
 
         # {capo}
         m = _CAPO_RE.match(ln)
         if m:
-            if target == 'guitarra':
-                out.append('{capo: %d}' % capo)
-            else:
-                out.append('{diagrams: off}')
             continue
 
-        # {subtitle}: en guitarra anota la cejilla si la hay (coste vertical cero)
+        # {subtitle}: en la variante con cejilla anota la cejilla si la hay
         m = _SUBTITLE_RE.match(ln)
         if m:
             sub = m.group(1).strip()
-            if target == 'guitarra' and capo > 0:
+            if target == 'con-cejilla' and capo > 0:
                 sub = '%s \u00b7 Cejilla %d' % (sub, capo)
             out.append('{subtitle: %s}' % sub)
             continue
 
-        # Tabs: solo guitarra
+        if ln.strip().lower().startswith('{artist:'):
+            out.append(render_inline(ln, reltonic, prefer))
+            if not emitted_key:
+                emit_key_and_capo(out, target, out_key, capo)
+                emitted_key = True
+            continue
+
+        # Tabs: solo en la variante con cejilla
         if ln.strip().startswith('{start_of_tab'):
-            if target == 'bajo':
+            if target == 'sin-cejilla':
                 skip_tab = True
                 continue
         if skip_tab:
@@ -156,20 +230,39 @@ def render_song(path, target):
         # Resto: sustituye grados inline (seguro; lo que no es grado pasa igual)
         out.append(render_inline(ln, reltonic, prefer))
 
+    if not emitted_key:
+        emit_key_and_capo(out, target, out_key, capo)
+
     return out
 
 
 def main():
-    files = sorted(glob.glob(os.path.join(SONGS, '**', '*.cho'), recursive=True))
-    for target in ('guitarra', 'bajo'):
-        for f in files:
+    ap = argparse.ArgumentParser(description='Expande canciones en grados a las variantes con/sin cejilla.')
+    ap.add_argument('--setlist', '-s', default='san-roque-2026',
+                    help='Nombre o ruta JSON del setlist (por defecto: san-roque-2026).')
+    args = ap.parse_args()
+
+    setlist, entries = load_setlist(args.setlist)
+    if entries:
+        files = [(os.path.join(SONGS, entry['path']), entry) for entry in entries]
+    else:
+        files = [(f, None) for f in sorted(glob.glob(os.path.join(SONGS, '**', '*.cho'), recursive=True))]
+    for target in ('con-cejilla', 'sin-cejilla'):
+        target_out = os.path.join(OUT, target)
+        if os.path.isdir(target_out):
+            shutil.rmtree(target_out)
+        for f, meta in files:
             rel = os.path.relpath(f, SONGS)
             dest = os.path.join(OUT, target, rel)
             os.makedirs(os.path.dirname(dest), exist_ok=True)
-            body = render_song(f, target)
+            body = render_song(f, target, meta)
             with open(dest, 'w', encoding='utf-8', newline='\n') as fh:
                 fh.write('\n'.join(body) + '\n')
-        print('render %-9s: %d canciones -> %s' % (target, len(files), os.path.join(OUT, target)))
+        if setlist:
+            print('render %-12s: %d canciones (%s) -> %s' % (
+                target, len(files), setlist.get('slug', args.setlist), target_out))
+        else:
+            print('render %-9s: %d canciones -> %s' % (target, len(files), target_out))
 
 
 if __name__ == '__main__':

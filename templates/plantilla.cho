@@ -5,8 +5,8 @@
 {title: Título de la canción}
 {subtitle: Artista}
 {artist: Artista}
-{key: Do}
-{capo: 0}
+
+# El tono/cejilla no van aqui: se declaran en setlists/<evento>.json.
 
 {comment: Tono y progresión base (p. ej.: Lam · Sol · Fa · Mi)}
 

@@ -2,13 +2,15 @@
 
 Las canciones se escriben en **[ChordPro](https://www.chordpro.org/)** (`.cho`), pero en
 este repo la **fuente canónica guarda los acordes en grados** (números romanos), no en un
-tono concreto. A partir de esa fuente se generan automáticamente **dos versiones** de cada
-canción:
+tono concreto. El tono/cejilla se guarda por evento en `setlists/<evento>.json`. A partir
+de esa combinación (canción + setlist) se generan automáticamente **dos versiones**:
 
-- **Guitarra** — con las **formas** del tono pedido y la **cejilla** indicada (`{capo}`),
+- **Con cejilla** — con las **formas** del tono pedido y la **cejilla** indicada en el setlist,
   con diagramas de acordes.
-- **Bajo** — con los acordes ya **transpuestos al tono real** (sin cejilla), sin diagramas
+- **Sin cejilla** — con los acordes ya **transpuestos al tono real** (sin cejilla), sin diagramas
   ni tablaturas.
+- Los cancioneros incluyen una portada con el título del setlist y la variante (`Con cejilla` o
+  `Sin cejilla`), seguida del índice y las canciones.
 
 > **¿Por qué grados?** Así una sola fuente sirve para cualquier instrumento/tono. El
 > guitarrista toca con cejilla usando formas cómodas; el bajista necesita las notas reales.
@@ -20,30 +22,33 @@ canción:
 
 ```
 songs/**/*.cho              (fuente en GRADOS  ← esto es lo que editas)
+setlists/<evento>.json   (orden + tono/cejilla)
         │
-        │  python scripts/render.py     (expande grados → acordes)
+        │  python scripts/render.py --setlist <evento> (expande grados → acordes)
         ▼
-dist/_build/guitarra/**     dist/_build/bajo/**      (.cho ya en notas)
+dist/_build/con-cejilla/**     dist/_build/sin-cejilla/**      (.cho ya en notas)
         │                           │
-        │  build.ps1 -Variant guitarra / bajo
+        │  build.ps1 -Variant con-cejilla / sin-cejilla
         ▼                           ▼
-dist/guitarra/**.pdf        dist/bajo/**.pdf
-dist/guitarra/cancionero-guitarra.pdf   dist/bajo/cancionero-bajo.pdf
+dist/con-cejilla/**.pdf        dist/sin-cejilla/**.pdf
+dist/con-cejilla/cancionero-con-cejilla.pdf   dist/sin-cejilla/cancionero-sin-cejilla.pdf
 ```
 
 Comandos:
 
 ```powershell
-# 1) expandir grados a las dos variantes en dist\_build\
-python scripts\render.py
+# 1) expandir un setlist a las dos variantes en dist\_build\
+python scripts\render.py --setlist preboda-mercedes-alberto
 
 # 2) compilar PDFs de cada release
-.\scripts\build.ps1 -Variant guitarra            # dist\guitarra\<artista>\<cancion>.pdf
-.\scripts\build.ps1 -Variant bajo                # dist\bajo\<artista>\<cancion>.pdf
+.\scripts\build.ps1 -Variant con-cejilla         # dist\con-cejilla\<artista>\<cancion>.pdf
+.\scripts\build.ps1 -Variant sin-cejilla         # dist\sin-cejilla\<artista>\<cancion>.pdf
 
-# 3) cancionero completo (un PDF con índice) por release
-.\scripts\build.ps1 -Variant guitarra -Songbook  # dist\guitarra\cancionero-guitarra.pdf
-.\scripts\build.ps1 -Variant bajo   -Songbook    # dist\bajo\cancionero-bajo.pdf
+# 3) cancionero completo (un PDF con índice) por setlist
+.\scripts\build.ps1 -Variant con-cejilla -Songbook -Setlist preboda-mercedes-alberto
+.\scripts\build.ps1 -Variant sin-cejilla -Songbook -Setlist preboda-mercedes-alberto
+# dist\con-cejilla\cancionero-con-cejilla.pdf
+# dist\sin-cejilla\cancionero-sin-cejilla.pdf
 ```
 
 ---
@@ -88,15 +93,13 @@ Los acordes van **inline**, entre corchetes, justo delante de la sílaba del cam
 |---|---|
 | `{title: ...}` | Título |
 | `{subtitle: ...}` / `{artist: ...}` | Artista |
-| `{key: <forma>}` | **Tono de forma** para la guitarra (p. ej. `Lam`). Define la tónica de los grados |
-| `{capo: N}` | **Cejilla** en el traste N (solo guitarra; se muestra como `· Cejilla N` en el subtítulo). El bajo lo convierte en transposición real |
 | `{grid: ...}` | **Rueda de acordes en grados** (zona “de máquina”: se expande al tono de salida) |
 | `{x_degkey: +N}` / `{x_degkey: Nota}` | **Modulación**: mueve la tónica de los grados a partir de ese punto |
 | `{comment: ...}` | Nota **literal** visible (caja gris). Texto en prosa; **no** se transpone |
 | `{start_of_verse: Etiqueta}` … `{end_of_verse}` | Estrofa con etiqueta |
 | `{start_of_chorus: Etiqueta}` … `{end_of_chorus}` | Estribillo (barra lateral) |
 | `{chorus}` | Repite el último estribillo sin reescribirlo |
-| `{start_of_tab: ...}` … `{end_of_tab}` | Tablatura (solo guitarra; el bajo la **elimina**) |
+| `{start_of_tab: ...}` … `{end_of_tab}` | Tablatura (solo con cejilla; sin cejilla la **elimina**) |
 | `# ...` | Comentario que **no** sale en el PDF (fuente, notas de trabajo) |
 
 ### Acordes: `[grado]` inline · `{grid}` · `{comment}`
@@ -126,7 +129,7 @@ la letra** (como en lacuerda.net); `{grid}` y `{comment}` son casos concretos.
 - **`{grid: ...}`** para **secciones instrumentales** (intro, punteo, solo, interludio **sin
   letra**) o cuando quieras rotular la rueda de una parte instrumental. Escribe los acordes en
   **grados**; puedes intercalar etiquetas y separadores (`·`, `/`, `x2`, `estrofa:`…) y se
-  conservan tal cual. El `{grid}` **sí se transpone** al tono real en el bajo.
+  conservan tal cual. El `{grid}` **sí se transpone** al tono real en la versión sin cejilla.
 
   ```
   {grid: Intro: i · bVII · bVI · V  (punteo)}
@@ -134,7 +137,7 @@ la letra** (como en lacuerda.net); `{grid}` y `{comment}` son casos concretos.
 
 - **`{comment: ...}`** solo para **prosa** (recitados, «2ª vez cambia el final…», «mismas
   letras que la Estrofa 1»…). Su texto sale **verbatim** y **no** se transpone, así que **no
-  metas acordes que dependan del tono** ahí dentro (saldrían mal en el bajo). Si necesitas
+  metas acordes que dependan del tono** ahí dentro (saldrían mal en la versión sin cejilla). Si necesitas
   mostrar acordes, ponlos inline o como grados en un `{grid}`.
 
 ### Modulación (`{x_degkey}`)
@@ -193,12 +196,12 @@ he[V]rido por las flechas de la
 
 ## Cómo se comportan las dos variantes
 
-Partiendo de una canción con `{key: Lam}` + `{capo: 3}` (forma Lam, suena en Dom):
+Partiendo de una entrada de setlist con `"key": "Lam"` + `"capo": 3` (forma Lam, suena en Dom):
 
 | | **Guitarra** | **Bajo** |
 |---|---|---|
 | Tónica de salida | `Lam` (la forma) | `Dom` (tono real = forma + cejilla) |
-| `{capo}` | se conserva | se elimina; se aplica como transposición |
+| Cejilla | se muestra y se conserva | se elimina; se aplica como transposición |
 | `{subtitle}` | `Artista · Cejilla 3` (etiqueta visible) | `Artista` (sin cejilla) |
 | Diagramas | sí | no (`{diagrams: off}`) |
 | Tablaturas `{sot}` | se conservan | se eliminan |
@@ -212,8 +215,6 @@ Partiendo de una canción con `{key: Lam}` + `{capo: 3}` (forma Lam, suena en Do
 # Fuente: <url>
 {title: Mi canción}
 {subtitle: Artista}
-{key: Lam}
-{capo: 0}
 
 {grid: Intro: i · bVII · bVI · V}
 
@@ -239,12 +240,14 @@ Partiendo de una canción con `{key: Lam}` + `{capo: 3}` (forma Lam, suena en Do
 ## Añadir o editar una canción
 
 1. Escribe/edita la fuente en **grados** en `songs/<artista>/<cancion>.cho`.
-2. Expande y compila:
+2. Añade o actualiza su entrada en `setlists/<evento>.json` con `path`, `order`, `key` y
+   `capo`.
+3. Expande y compila:
    ```powershell
-   python scripts\render.py
-   .\scripts\build.ps1 -Variant guitarra -Song dist\_build\guitarra\<artista>\<cancion>.cho
+   python scripts\render.py --setlist preboda-mercedes-alberto
+   .\scripts\build.ps1 -Variant con-cejilla -Song dist\_build\con-cejilla\<artista>\<cancion>.cho
    ```
-3. Revisa que la variante de **guitarra reproduce exactamente** los acordes que querías. El
+3. Revisa que la variante **con cejilla reproduce exactamente** los acordes que querías. El
    motor `scripts/chordlib.py` tiene un autotest:
    ```powershell
    python scripts\chordlib.py --selftest

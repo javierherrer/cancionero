@@ -6,9 +6,6 @@
 {title: Como Camarón}
 {subtitle: Estopa}
 {artist: Estopa}
-{key: Lam}
-{capo: 3}
-
 {define: Lam base-fret 5 frets 0 0 3 1 0 0}
 
 {start_of_verse: Estrofa 1}

@@ -1,5 +1,6 @@
-# Orden del cancionero (para el PDF -Songbook y el indice).
-# Una ruta relativa songs/<artista>/<cancion>.cho por linea, en orden.
+# Orden legacy del cancionero (para -Songbook sin -Setlist).
+# Los setlists versionables viven en setlists/<evento>.json y guardan orden + tono.
+# Una ruta relativa a songs/<artista>/<cancion>.cho por linea, en orden.
 # Lineas vacias o que empiezan por # se ignoran.
 # Las canciones que no aparezcan aqui van al final, en orden alfabetico.
 los-moles/el-legionario-y-la-morita.cho

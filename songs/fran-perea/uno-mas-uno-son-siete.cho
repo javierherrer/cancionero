@@ -1,0 +1,53 @@
+# Fuente: texto pegado por el usuario (Fran Perea - Uno mas uno son siete)
+# Acordes fuente en Mi; repertorio preboda-mercedes-alberto la toca en La.
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: Uno mas uno son siete}
+{subtitle: Fran Perea}
+{artist: Fran Perea}
+
+{start_of_verse: Estrofa 1}
+[I]En un andén de la esta[IV]ción, bajo el sol abrasa[ii]dor
+Tú hablabas de un rasca[V]cielos del cielo de Nueva York.
+Vente pronto a ver el mar y tú envía una postal.
+Yo ya sabía que aquel día era el final.
+Ahora tengo mucho más,
+rojo o negro, par o impar,
+por fin la suerte trae un as.
+Y un cristal para mirar, y una pared para colgar,
+siete caras sonriendo en una foto de carnet.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[IV]Mis cuentos [V]no hablaban de historias [I]hechas de casuali[ii]dad.
+Nadie me dijo que el destino daba esta oportunidad.
+Uno más uno son siete, quién me lo iba a de[IV]cir,[iii][ii]
+que era tan [V]fácil ser fe[IV]liz.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+[I]Cuántos años llevo a[IV]quí, cuántos me pueden que[ii]dar.
+Cuál es el precio e[V]xacto de la felicidad.
+Quién se acordará de mí, quién te volverá a mirar.
+Quién impulsa las maquinas de la casualidad.
+Una caricia del ayer, unas postales sin firmar
+y aquel disco de los Burning no son cosas que guardar.
+Hoy sonrío al recordar que soñaras con volar,
+desde los bancos de Madrid no se puede ver el mar.
+{end_of_verse}
+
+{chorus}
+{grid: Cierre: IV · iii · ii · I}
+
+{grid: Interludio: IV · I · IV}
+
+{start_of_verse: Estrofa 3}
+[I]Si hubo un tiempo para [IV]mí, [I]ahora es para los [IV]seis.
+[I]Está saliendo el ca[IV]fé,
+[ii]otra vez comienza el [V]lío como cada amanecer.
+Hay tostadas para tres, arreglad la habitación.
+Este cuadro de familia se merece una canción.
+{end_of_verse}
+
+{chorus}
+{grid: Cierre: IV · iii · ii · I}
