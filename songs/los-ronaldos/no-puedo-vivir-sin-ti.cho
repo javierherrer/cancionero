@@ -1,0 +1,53 @@
+# Fuente: https://acordes.lacuerda.net/los_ronaldos/no_puedo_vivir_sin_ti.shtml
+# Version de lacuerda: transcripcion de cargalan (ref. ACO-rona0062).
+# Original en Do; el setlist la toca en Do.
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: No puedo vivir sin ti}
+{subtitle: Los Ronaldos}
+{artist: Los Ronaldos}
+
+{start_of_verse: Estrofa 1}
+[I]Llevas años enredada en mis manos, en mi pelo,
+[III7]en mi cabeza,
+[IV]y no puedo más,
+[III7]no puedo [V]más.
+Debería estar cansado de tus manos, de tu pelo,
+de tus rarezas,
+pero quiero más,
+yo quiero más.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[I]No puedo vivir sin ti,
+[III7]no hay manera,
+[IV]no puedo estar sin ti,
+[III7]no hay ma[V]nera.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+[I]Me dijiste que te irías, pero llevas en mi casa
+[III7]toda la vida,
+[IV]sé que no te irás.
+[III7]Tú no te i[V]rás.
+Has colgado tu bandera, traspasado la frontera,
+eres la reina.
+Siempre reinarás,
+siempre reinarás.
+{end_of_verse}
+
+{chorus}
+
+{start_of_verse: Estrofa 3}
+[I]Y ahora estoy aquí esperando a que vengan a buscarme.
+[III7]Tú no te muevas,
+[IV]no me encontrarán.
+[III7]No me encontra[V]rán.
+Yo me quedo para siempre con mi reino,
+su bandera,
+ya no hay fronteras.
+Me dejaré llevar a ningún lugar.
+{end_of_verse}
+
+{chorus}
+{comment: Repite el estribillo 3 veces}

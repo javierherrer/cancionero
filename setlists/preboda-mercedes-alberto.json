@@ -12,13 +12,14 @@
     { "order": 7, "path": "songs/melendi/caminando-por-la-vida.cho", "key": "Do", "capo": 0 },
     { "order": 8, "path": "songs/estopa/como-camaron.cho", "key": "Lam", "capo": 3 },
     { "order": 9, "path": "songs/lori-meyers/emborracharme.cho", "key": "Do", "capo": 0 },
-    { "order": 10, "path": "songs/aitana/superestrella.cho", "key": "Mi", "capo": 0 },
-    { "order": 11, "path": "songs/maldita-nerea/el-secreto-de-las-tortugas.cho", "key": "Do", "capo": 0 },
-    { "order": 12, "path": "songs/el-ultimo-de-la-fila/insurreccion.cho", "key": "La", "capo": 3 },
-    { "order": 13, "path": "songs/seguridad-social/chiquilla.cho", "key": "Fa", "capo": 0 },
-    { "order": 14, "path": "songs/fran-perea/uno-mas-uno-son-siete.cho", "key": "La", "capo": 0 },
-    { "order": 15, "path": "songs/benito-kamelas/aquellas-cosas-que-soliamos-hacer.cho", "key": "Do", "capo": 0 },
-    { "order": 16, "path": "songs/nino-bravo/un-beso-y-una-flor.cho", "key": "Do", "capo": 0 },
-    { "order": 17, "path": "songs/salvador-valverde/si-vas-a-calatayud.cho", "key": "La", "capo": 5 }
+    { "order": 10, "path": "songs/los-ronaldos/no-puedo-vivir-sin-ti.cho", "key": "Do", "capo": 0 },
+    { "order": 11, "path": "songs/aitana/superestrella.cho", "key": "Mi", "capo": 0 },
+    { "order": 12, "path": "songs/maldita-nerea/el-secreto-de-las-tortugas.cho", "key": "Do", "capo": 0 },
+    { "order": 13, "path": "songs/el-ultimo-de-la-fila/insurreccion.cho", "key": "La", "capo": 3 },
+    { "order": 14, "path": "songs/seguridad-social/chiquilla.cho", "key": "Fa", "capo": 0 },
+    { "order": 15, "path": "songs/fran-perea/uno-mas-uno-son-siete.cho", "key": "La", "capo": 0 },
+    { "order": 16, "path": "songs/benito-kamelas/aquellas-cosas-que-soliamos-hacer.cho", "key": "Do", "capo": 0 },
+    { "order": 17, "path": "songs/nino-bravo/un-beso-y-una-flor.cho", "key": "Do", "capo": 0 },
+    { "order": 18, "path": "songs/salvador-valverde/si-vas-a-calatayud.cho", "key": "La", "capo": 5 }
   ]
 }
