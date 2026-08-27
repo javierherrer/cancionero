@@ -82,7 +82,7 @@ python scripts\render.py --setlist preboda-mercedes-alberto
 1. Crea `songs/<artista>/<cancion>.cho` y escribe los acordes **en grados** (ver
    [`FORMAT.md`](FORMAT.md)). No pongas `{key}` ni `{capo}` en la canción.
 2. Añade la canción al JSON de setlist (`setlists/<evento>.json`) indicando `path`,
-   `order`, `key` y `capo`.
+   `order`, `key` (el **tono real**, el que suena) y `capo`.
 3. Expande y compila:
    ```powershell
    python scripts\render.py --setlist preboda-mercedes-alberto
@@ -96,10 +96,16 @@ python scripts\render.py --setlist preboda-mercedes-alberto
 
 ## Interpretación de los tonos (p. ej. «Lam +3»)
 
-«Lam +3» = tocar con las **formas de Lam** y la **cejilla en el traste 3**
-→ en el setlist: `"key": "Lam", "capo": 3`. En el PDF con cejilla los acordes se escriben
-como la forma (Lam, Sol, Fa, Mi); en el PDF sin cejilla salen transpuestos al **tono real**
-(Dom, Sib, Lab, Sol). Sin número (p. ej. «Do»), sin cejilla (`"capo": 0`).
+«Lam +3» (notación lacuerda) = tocar con las **formas de Lam** y la **cejilla en el traste 3**,
+lo que en realidad **suena en Dom**. En el setlist se guarda el **tono real**:
+`"key": "Dom", "capo": 3`.
+
+La forma que se digita se deriva restando la cejilla (`key` − `capo`), así que:
+
+- PDF **con cejilla** → acordes como forma (Lam, Sol, Fa, Mi) y la etiqueta `Cejilla 3`.
+- PDF **sin cejilla** → acordes en el tono real (Dom, Sib, Lab, Sol).
+
+Sin número (p. ej. «Do») no hay cejilla: `"key": "Do", "capo": 0`.
 
 ---
 

@@ -2,10 +2,10 @@
 """
 Genera los dos cancioneros a partir de la fuente canonica en grados y un setlist:
 
-  - con-cejilla: acordes en el tono de FORMA (el que se digita con cejilla).
-              Se inyecta {capo: N} y los diagramas.
-  - sin-cejilla: acordes transpuestos al tono REAL (forma + cejilla),
-              sin cejilla ({capo} eliminado) y sin diagramas.
+  - con-cejilla: acordes en el tono de FORMA (el que se digita), obtenido
+              restando la cejilla al tono real. Se inyecta {capo: N} y los diagramas.
+  - sin-cejilla: acordes en el tono REAL, sin cejilla ({capo} eliminado)
+              y sin diagramas.
 
 Fuente (songs/**/*.cho):
   - inline  [I] [vi7] [bVII] ...          (grados)
@@ -14,7 +14,9 @@ Fuente (songs/**/*.cho):
   - modulacion  {x_degkey: +N}  o  {x_degkey: Si}  (cambia la tonica relativa)
 
 Setlist (setlists/<evento>.json):
-  - entries[].path, entries[].order, entries[].key, entries[].capo
+  - entries[].path, entries[].order, entries[].capo
+  - entries[].key es el tono REAL (el que suena). La forma que se digita en la
+    variante con cejilla se deriva como key - capo.
 
 Salida: dist/_build/{con-cejilla,sin-cejilla}/<artista>/<cancion>.cho
 """
@@ -157,17 +159,18 @@ def render_song(path, target, song_meta=None):
     lines = open(path, encoding='utf-8').read().splitlines()
 
     if song_meta:
-        shape_key = song_meta['key']
+        real_key = song_meta['key']
         capo = song_meta['capo']
     else:
-        shape_key, capo = find_source_key(lines)
-    if shape_key is None:
+        real_key, capo = find_source_key(lines)
+    if real_key is None:
         raise ValueError('Sin tono para %s. Usa --setlist o anade {key} legacy.' % path)
 
     if target == 'con-cejilla':
-        out_key = shape_key
-    else:  # sin-cejilla: tono real = forma + cejilla
-        out_key = cl.transpose_key(shape_key, capo)
+        # Tono de forma: lo que se digita = tono real menos la cejilla.
+        out_key = cl.transpose_key(real_key, -capo)
+    else:  # sin-cejilla: se toca directamente en el tono real
+        out_key = real_key
 
     tonicpc, _is_minor, prefer = cl.parse_key(out_key)
     reltonic = tonicpc

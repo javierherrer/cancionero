@@ -3,21 +3,21 @@
   "title": "San Roque 2026",
   "tag": "v1.0",
   "entries": [
-    { "order": 1, "path": "songs/los-moles/el-legionario-y-la-morita.cho", "key": "Lam", "capo": 3 },
+    { "order": 1, "path": "songs/los-moles/el-legionario-y-la-morita.cho", "key": "Dom", "capo": 3 },
     { "order": 2, "path": "songs/manzanita/un-ramito-de-violetas.cho", "key": "Lam", "capo": 0 },
-    { "order": 3, "path": "songs/los-rebujitos/todos-los-besos.cho", "key": "Do", "capo": 3 },
+    { "order": 3, "path": "songs/los-rebujitos/todos-los-besos.cho", "key": "Mib", "capo": 3 },
     { "order": 4, "path": "songs/los-delinquentes/el-aire-de-la-calle.cho", "key": "Lam", "capo": 0 },
-    { "order": 5, "path": "songs/fondo-flamenco/mi-estrella-blanca.cho", "key": "Lam", "capo": 3 },
+    { "order": 5, "path": "songs/fondo-flamenco/mi-estrella-blanca.cho", "key": "Dom", "capo": 3 },
     { "order": 6, "path": "songs/melendi/con-la-luna-llena.cho", "key": "Do", "capo": 0 },
     { "order": 7, "path": "songs/melendi/caminando-por-la-vida.cho", "key": "Do", "capo": 0 },
-    { "order": 8, "path": "songs/estopa/como-camaron.cho", "key": "Lam", "capo": 3 },
+    { "order": 8, "path": "songs/estopa/como-camaron.cho", "key": "Dom", "capo": 3 },
     { "order": 9, "path": "songs/lori-meyers/emborracharme.cho", "key": "Do", "capo": 0 },
     { "order": 10, "path": "songs/aitana/superestrella.cho", "key": "Mi", "capo": 0 },
     { "order": 11, "path": "songs/maldita-nerea/el-secreto-de-las-tortugas.cho", "key": "Do", "capo": 0 },
-    { "order": 12, "path": "songs/el-ultimo-de-la-fila/insurreccion.cho", "key": "La", "capo": 3 },
+    { "order": 12, "path": "songs/el-ultimo-de-la-fila/insurreccion.cho", "key": "Do", "capo": 3 },
     { "order": 13, "path": "songs/seguridad-social/chiquilla.cho", "key": "Fa", "capo": 0 },
     { "order": 14, "path": "songs/benito-kamelas/aquellas-cosas-que-soliamos-hacer.cho", "key": "Do", "capo": 0 },
     { "order": 15, "path": "songs/nino-bravo/un-beso-y-una-flor.cho", "key": "Do", "capo": 0 },
-    { "order": 16, "path": "songs/salvador-valverde/si-vas-a-calatayud.cho", "key": "La", "capo": 5 }
+    { "order": 16, "path": "songs/salvador-valverde/si-vas-a-calatayud.cho", "key": "Re", "capo": 5 }
   ]
 }

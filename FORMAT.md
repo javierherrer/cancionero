@@ -196,12 +196,13 @@ he[V]rido por las flechas de la
 
 ## Cómo se comportan las dos variantes
 
-Partiendo de una entrada de setlist con `"key": "Lam"` + `"capo": 3` (forma Lam, suena en Dom):
+Partiendo de una entrada de setlist con `"key": "Dom"` + `"capo": 3` (suena en Dom, se
+digita con formas de Lam):
 
-| | **Guitarra** | **Bajo** |
+| | **Con cejilla** | **Sin cejilla** |
 |---|---|---|
-| Tónica de salida | `Lam` (la forma) | `Dom` (tono real = forma + cejilla) |
-| Cejilla | se muestra y se conserva | se elimina; se aplica como transposición |
+| Tónica de salida | `Lam` (la forma = `key` − `capo`) | `Dom` (el tono real = `key`) |
+| Cejilla | se muestra y se conserva | se elimina; ya va aplicada en el tono |
 | `{subtitle}` | `Artista · Cejilla 3` (etiqueta visible) | `Artista` (sin cejilla) |
 | Diagramas | sí | no (`{diagrams: off}`) |
 | Tablaturas `{sot}` | se conservan | se eliminan |
@@ -240,8 +241,8 @@ Partiendo de una entrada de setlist con `"key": "Lam"` + `"capo": 3` (forma Lam,
 ## Añadir o editar una canción
 
 1. Escribe/edita la fuente en **grados** en `songs/<artista>/<cancion>.cho`.
-2. Añade o actualiza su entrada en `setlists/<evento>.json` con `path`, `order`, `key` y
-   `capo`.
+2. Añade o actualiza su entrada en `setlists/<evento>.json` con `path`, `order`, `key`
+   (el **tono real**, el que suena) y `capo`.
 3. Expande y compila:
    ```powershell
    python scripts\render.py --setlist preboda-mercedes-alberto

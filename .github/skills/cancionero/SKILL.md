@@ -25,12 +25,13 @@ diagramas). Cada cancion cabe en **una pagina** (para el iPad, sin scroll).
 - La fuente vive en `songs/<artista>/<cancion>.cho` con acordes en **grados**
   (`[I]`, `[vi7]`, `[bVII]`...), no en notas, y **sin `{key}` ni `{capo}`**.
 - El setlist vive en `setlists/<evento>.json`; cada entrada tiene:
-  `path`, `order`, `key` (tono de forma) y `capo`.
-- Notacion tipo lacuerda: **"LAm +3" = `"key": "Lam", "capo": 3`**.
+  `path`, `order`, `key` (**tono real**, el que suena) y `capo`.
+- Notacion tipo lacuerda: **"LAm +3"** = formas de Lam con cejilla 3, que suena en **Dom**
+  -> se guarda como **`"key": "Dom", "capo": 3`**. La forma se deriva (`key` - `capo`).
 - `scripts/render.py --setlist <evento>` expande los grados a `dist/_build/{con-cejilla,sin-cejilla}`:
-  - **con-cejilla** -> tono de forma, conserva cejilla y la anota en el
+  - **con-cejilla** -> tono de forma (`key` - `capo`), conserva cejilla y la anota en el
     `{subtitle}` como `... · Cejilla N`; con diagramas.
-  - **sin-cejilla** -> tono real (`key` transpuesto `+capo`), sin cejilla, sin
+  - **sin-cejilla** -> tono real (`key`), sin cejilla, sin
     diagramas ni tablaturas.
 - `scripts/build.ps1` compila esos `.cho` a PDF con ChordPro.
 - Notacion **espanola** (Do Re Mi Fa Sol La Si) via `config/chordpro.json`.
@@ -68,7 +69,7 @@ La carpeta `dist/` **no** se versiona.
    silaba del cambio (encima de la letra, estilo lacuerda; incluso a mitad de palabra). El
    estribillo se escribe una vez (`{start_of_chorus}`) y se reutiliza con `{chorus}`. Usa
    `{grid: ...}` **solo para secciones instrumentales** (intro/solo/interludio sin letra).
-4. Anade la cancion al JSON de setlist (`path`, `order`, `key`, `capo`).
+4. Anade la cancion al JSON de setlist (`path`, `order`, `key` = tono real, `capo`).
 5. `python scripts\render.py --setlist <evento>` y compila la cancion.
 6. **Verifica 1 pagina**. Si se va a 2, anade `{columns: 2}` tras la cabecera o compacta.
 7. Revisa que la variante **con cejilla** reproduce exactamente los acordes que querias.
@@ -78,8 +79,11 @@ El orden de las canciones del cancionero (`-Songbook`), el tono y la cejilla los
 `setlists/<evento>.json`:
 
 ```json
-{ "order": 1, "path": "songs/artista/cancion.cho", "key": "La", "capo": 0 }
+{ "order": 1, "path": "songs/artista/cancion.cho", "key": "Dom", "capo": 3 }
 ```
+
+`key` es el tono **real** (lo que suena) y `capo` el traste de la cejilla. La forma que se
+digita se calcula como `key` - `capo` (en el ejemplo: suena Dom, se toca con formas de Lam).
 
 El indice impreso y los marcadores del PDF usan ese orden via `songindex` en
 `contents`/`pdf.outlines` de `config/chordpro.json`. `config/orden.txt` queda como modo legacy
@@ -87,7 +91,8 @@ si compilas sin `-Setlist`.
 
 ## Flujo: editar tono, cejilla o simplificar
 - **Cambiar tono/cejilla**: edita solo `key` y/o `capo` en el setlist; ambos PDF se regeneran
-  coherentes. (Subir una cancion "a DO" = ajustar `key`/`capo` para que el tono real sea Do.)
+  coherentes. `key` es el tono **real**, asi que "subir una cancion a DO" = poner `"key": "Do"`;
+  la `capo` solo decide con que formas se digita en la variante con cejilla.
 - **Parte cantada**: muestra la rueda **una vez, en la 1a vuelta al principio de cada seccion**,
   y deja **limpio** el resto de la seccion si repite el mismo ciclo; **vuelvela a poner al inicio
   de cada seccion nueva**. **Conserva las variaciones** inline en su verso. Si la seccion no
