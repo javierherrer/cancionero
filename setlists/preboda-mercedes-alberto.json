@@ -18,8 +18,9 @@
     { "order": 13, "path": "songs/el-ultimo-de-la-fila/insurreccion.cho", "key": "Do", "capo": 3 },
     { "order": 14, "path": "songs/seguridad-social/chiquilla.cho", "key": "Fa", "capo": 0 },
     { "order": 15, "path": "songs/fran-perea/uno-mas-uno-son-siete.cho", "key": "La", "capo": 0 },
-    { "order": 16, "path": "songs/benito-kamelas/aquellas-cosas-que-soliamos-hacer.cho", "key": "Do", "capo": 0 },
-    { "order": 17, "path": "songs/nino-bravo/un-beso-y-una-flor.cho", "key": "Do", "capo": 0 },
-    { "order": 18, "path": "songs/salvador-valverde/si-vas-a-calatayud.cho", "key": "Re", "capo": 5 }
+    { "order": 16, "path": "songs/once/enamorada.cho", "key": "Mib", "capo": 3 },
+    { "order": 17, "path": "songs/benito-kamelas/aquellas-cosas-que-soliamos-hacer.cho", "key": "Do", "capo": 0 },
+    { "order": 18, "path": "songs/nino-bravo/un-beso-y-una-flor.cho", "key": "Do", "capo": 0 },
+    { "order": 19, "path": "songs/salvador-valverde/si-vas-a-calatayud.cho", "key": "Re", "capo": 5 }
   ]
 }

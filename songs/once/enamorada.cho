@@ -1,0 +1,38 @@
+# Fuente: letra aportada por el usuario.
+# Acordes en grados: rueda I - IV - V - I en estrofas y estribillo.
+# Notacion espanola. Requiere config/chordpro.json.
+
+{title: Enamorada}
+{artist: Once}
+
+{start_of_verse: Estrofa 1}
+[I]Llevo todo el ve[IV]rano
+[V]loca detrás de [I]ti,
+y justo el último día
+tú te fijaste en mí.
+Me preguntaste mi nombre
+y a mí me tembló la voz,
+y solo sentir tu roce
+mi cuerpo se estremeció.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+[I]Enamorada de su [IV]cuerpo,
+[V]enamorada de [I]su voz.
+Es mi amor de verano
+y el verano se acabó.
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+[I]Yo era tu estrella de [IV]mar,
+[V]la estrella que más lu[I]cía.
+Lo dijiste en un susurro
+el día que yo me iba.
+Me pediste mi teléfono,
+dijiste que llamarías.
+Me dijiste que en invierno
+también me calentarías.
+{end_of_verse}
+
+{chorus}
+{comment: Repite el estribillo}

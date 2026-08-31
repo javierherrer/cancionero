@@ -73,6 +73,12 @@
 
     "labels": { "width": "auto", "align": "left" },
 
+    "formats": {
+      "title": {
+        "subtitle": [ "", "%{artist|%{}%{subtitle| · %{}}|%{subtitle}}%{capo| · Cejilla %{}}", "" ]
+      }
+    },
+
     "fonts": {
       "title":    { "name": "Helvetica-Bold", "size": 15 },
       "subtitle": { "name": "Helvetica-Oblique", "size": 10 },

@@ -29,8 +29,8 @@ diagramas). Cada cancion cabe en **una pagina** (para el iPad, sin scroll).
 - Notacion tipo lacuerda: **"LAm +3"** = formas de Lam con cejilla 3, que suena en **Dom**
   -> se guarda como **`"key": "Dom", "capo": 3`**. La forma se deriva (`key` - `capo`).
 - `scripts/render.py --setlist <evento>` expande los grados a `dist/_build/{con-cejilla,sin-cejilla}`:
-  - **con-cejilla** -> tono de forma (`key` - `capo`), conserva cejilla y la anota en el
-    `{subtitle}` como `... · Cejilla N`; con diagramas.
+  - **con-cejilla** -> tono de forma (`key` - `capo`), conserva cejilla y la anota bajo el
+    titulo como `Artista · Cejilla N`; con diagramas.
   - **sin-cejilla** -> tono real (`key`), sin cejilla, sin
     diagramas ni tablaturas.
 - `scripts/build.ps1` compila esos `.cho` a PDF con ChordPro.
@@ -63,8 +63,9 @@ La carpeta `dist/` **no** se versiona.
 ## Flujo: anadir una cancion nueva
 1. Copia `templates/plantilla.cho` a `songs/<artista>/<cancion>.cho` (minusculas, sin acentos
    ni espacios, con guiones).
-2. Rellena la cabecera: `{title}`, `{subtitle}`/`{artist}`. No pongas `{key}` ni `{capo}`.
-   Deja 1-2 lineas `#` con la URL/origen de la version.
+2. Rellena la cabecera: `{title}` y `{artist}`. El artista ya se imprime bajo el titulo,
+   asi que **no repitas `{subtitle}`** (usalo solo si aporta algo distinto). No pongas
+   `{key}` ni `{capo}`. Deja 1-2 lineas `#` con la URL/origen de la version.
 3. Escribe la letra **junta** con los acordes en **grados** inline `[grado]` delante de la
    silaba del cambio (encima de la letra, estilo lacuerda; incluso a mitad de palabra). El
    estribillo se escribe una vez (`{start_of_chorus}`) y se reutiliza con `{chorus}`. Usa

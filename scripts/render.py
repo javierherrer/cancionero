@@ -46,7 +46,6 @@ _GRID_TOK = re.compile(
 
 _KEY_RE   = re.compile(r'^\{key:\s*([^}]+)\}\s*$')
 _CAPO_RE  = re.compile(r'^\{capo:\s*([^}]+)\}\s*$')
-_SUBTITLE_RE = re.compile(r'^\{subtitle:\s*(.*)\}\s*$')
 _GRID_RE  = re.compile(r'^\{grid:\s*(.*)\}\s*$')
 _DEGKEY_RE = re.compile(r'^\{x_degkey:\s*([^}]+)\}\s*$')
 _INLINE_RE = re.compile(r'\[([^\]]+)\]')
@@ -149,7 +148,8 @@ def find_source_key(lines):
 def emit_key_and_capo(out, target, out_key, capo):
     out.append('{key: %s}' % out_key)
     if target == 'con-cejilla':
-        out.append('{capo: %d}' % capo)
+        if capo > 0:
+            out.append('{capo: %d}' % capo)
     else:
         out.append('{diagrams: off}')
 
@@ -196,15 +196,6 @@ def render_song(path, target, song_meta=None):
         # {capo}
         m = _CAPO_RE.match(ln)
         if m:
-            continue
-
-        # {subtitle}: en la variante con cejilla anota la cejilla si la hay
-        m = _SUBTITLE_RE.match(ln)
-        if m:
-            sub = m.group(1).strip()
-            if target == 'con-cejilla' and capo > 0:
-                sub = '%s \u00b7 Cejilla %d' % (sub, capo)
-            out.append('{subtitle: %s}' % sub)
             continue
 
         if ln.strip().lower().startswith('{artist:'):

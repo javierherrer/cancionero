@@ -167,7 +167,7 @@ if ($Songbook) {
     if ($LASTEXITCODE -ne 0) { throw "Falló la generación del cancionero" }
     & $chordpro --config=$Config $cover -o $coverPdf
     if ($LASTEXITCODE -ne 0) { throw "Falló la generación de la portada" }
-    python -c "import fitz,sys; merged=fitz.open(); cover=fitz.open(sys.argv[1]); body=fitz.open(sys.argv[2]); merged.insert_pdf(cover); merged.insert_pdf(body); merged.save(sys.argv[3]); merged.close(); cover.close(); body.close()" $coverPdf $bodyPdf $out
+    python -c "import fitz,sys; merged=fitz.open(); cover=fitz.open(sys.argv[1]); body=fitz.open(sys.argv[2]); merged.insert_pdf(cover, from_page=0, to_page=0); merged.insert_pdf(body); merged.save(sys.argv[3]); merged.close(); cover.close(); body.close()" $coverPdf $bodyPdf $out
     if ($LASTEXITCODE -ne 0) { throw "Falló la combinación de portada y cancionero" }
     Remove-Item -LiteralPath $cover, $coverPdf, $bodyPdf -Force
     if ($LASTEXITCODE -eq 0) { Write-Host "OK  $out" -ForegroundColor Green }

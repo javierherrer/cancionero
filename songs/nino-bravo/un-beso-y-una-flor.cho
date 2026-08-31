@@ -4,7 +4,6 @@
 # Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
 
 {title: Un beso y una flor}
-{subtitle: Nino Bravo}
 {artist: Nino Bravo}
 {comment: Intro (arpegio)}
 {grid: IV · I · V · vi · V}

@@ -4,7 +4,6 @@
 # Notacion espanola. Requiere config/chordpro.json.
 
 {title: Mi estrella blanca}
-{subtitle: Fondo Flamenco}
 {artist: Fondo Flamenco}
 {comment: Intro (punteo)}
 {grid: i · bVII · bVI · V}

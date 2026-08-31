@@ -92,7 +92,8 @@ Los acordes van **inline**, entre corchetes, justo delante de la sílaba del cam
 | Directiva | Para qué sirve |
 |---|---|
 | `{title: ...}` | Título |
-| `{subtitle: ...}` / `{artist: ...}` | Artista |
+| `{artist: ...}` | Artista. **Se imprime bajo el título**, no hace falta repetirlo en `{subtitle}` |
+| `{subtitle: ...}` | Info **adicional** opcional (p. ej. `Copla popular - La Dolores`). Se muestra tras el artista |
 | `{grid: ...}` | **Rueda de acordes en grados** (zona “de máquina”: se expande al tono de salida) |
 | `{x_degkey: +N}` / `{x_degkey: Nota}` | **Modulación**: mueve la tónica de los grados a partir de ese punto |
 | `{comment: ...}` | Nota **literal** visible (caja gris). Texto en prosa; **no** se transpone |
@@ -203,7 +204,7 @@ digita con formas de Lam):
 |---|---|---|
 | Tónica de salida | `Lam` (la forma = `key` − `capo`) | `Dom` (el tono real = `key`) |
 | Cejilla | se muestra y se conserva | se elimina; ya va aplicada en el tono |
-| `{subtitle}` | `Artista · Cejilla 3` (etiqueta visible) | `Artista` (sin cejilla) |
+| Línea bajo el título | `Artista · Cejilla 3` | `Artista` (sin cejilla) |
 | Diagramas | sí | no (`{diagrams: off}`) |
 | Tablaturas `{sot}` | se conservan | se eliminan |
 | Un grado `i` | `Lam` | `Dom` |
@@ -215,7 +216,7 @@ digita con formas de Lam):
 ```chordpro
 # Fuente: <url>
 {title: Mi canción}
-{subtitle: Artista}
+{artist: Artista}
 
 {grid: Intro: i · bVII · bVI · V}
 

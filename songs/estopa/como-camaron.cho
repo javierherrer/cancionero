@@ -4,7 +4,6 @@
 # Notacion espanola. Requiere config/chordpro.json.
 
 {title: Como Camarón}
-{subtitle: Estopa}
 {artist: Estopa}
 {define: Lam base-fret 5 frets 0 0 3 1 0 0}
 

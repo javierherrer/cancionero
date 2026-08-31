@@ -3,9 +3,10 @@
 # Fuente: <url o referencia de dónde sacaste la versión>
 
 {title: Título de la canción}
-{subtitle: Artista}
 {artist: Artista}
 
+# El artista se imprime bajo el título automáticamente: no repitas {subtitle}.
+# Usa {subtitle} solo si aporta algo distinto (p. ej. "Copla popular - La Dolores").
 # El tono/cejilla no van aqui: se declaran en setlists/<evento>.json.
 
 {comment: Tono y progresión base (p. ej.: Lam · Sol · Fa · Mi)}
