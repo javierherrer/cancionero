@@ -1,0 +1,56 @@
+# Fuente: lacuerda.net (Manolo Escobar - Y viva España, trans. JUAN), texto pegado por el usuario.
+# Original en Mi: estrofas en Mim (i · V7 · bVII · bVI) y estribillo en Mi mayor (I · V7 · IV).
+# Notacion espanola (Do Re Mi Fa Sol La Si). Requiere config/chordpro.json.
+
+{title: Y viva España}
+{artist: Manolo Escobar}
+{grid: Intro: i · bVII · bVI · V7}
+
+{start_of_verse: Estrofa 1}
+Y entre [i]flores, fandan[V7]guillos y ale[i]gría
+nació mi Es[bVII]paña, la [bVI]tierra del a[V7]mor.
+Sólo Dios pudiera hacer tanta belleza
+que es imposible que puedan haber dos.
+Y [bVI]todo el mundo sabe que es ver[V7]dad,
+y llora cuando tiene que marchar.
+{end_of_verse}
+
+{start_of_chorus: Estribillo}
+Por [I]eso se [V7]oye este re[I]frán.
+¡Qué viva Es[V7]paña!
+Y [IV]siempre la recorda[V7]rás.
+¡Qué viva Es[I]paña!
+La gente [V7]canta con ar[I]dor.
+¡Qué viva Es[V7]paña!
+La [IV]vida tiene otro sa[V7]bor.
+España es la me[i]jor. [bVII] [bVI] [V7]
+{end_of_chorus}
+
+{start_of_verse: Estrofa 2}
+En las [i]tardes sole[V7]adas de co[i]rrida
+la gente a[bVII]clama al [bVI]diestro con fer[V7]vor.
+Y él saluda paseando a su cuadrilla
+con esa gracia de hidalgo español.
+La [bVI]plaza con sus olés vibra [V7]ya
+y empieza nuestra fiesta nacional.
+{end_of_verse}
+
+{chorus}
+
+{start_of_verse: Estrofa 3}
+Qué bo[i]nito es el [V7]mar Medite[i]rráneo,
+su Costa [bVII]Brava y [bVI]su Costa del [V7]Sol.
+La sardana y el fandango me emocionan
+porque en sus notas hay vida y hay calor.
+Es[bVI]paña siempre ha sido y se[V7]rá,
+eterno paraíso sin igual.
+{end_of_verse}
+
+{chorus}
+
+{comment: Final sobre los acordes del estribillo}
+{start_of_chorus: Final}
+Larala lala larala. ¡Qué viva España!...
+La gente canta con ardor
+Y Es[V7]paña es la me[I]jor. [V7]O[I]LE
+{end_of_chorus}
